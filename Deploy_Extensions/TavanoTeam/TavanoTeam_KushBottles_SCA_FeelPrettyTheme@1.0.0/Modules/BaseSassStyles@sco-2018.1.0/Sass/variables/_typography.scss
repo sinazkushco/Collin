@@ -1,0 +1,137 @@
+// Font size variables
+//
+// A scale of sizes has been defined for its use along the different elements of the theme.
+// As it happens with many other sizing scales variables go from XS to XXXL
+// Every size is relative to a base font size that may be modified. In that case all the other sizes will change in relationship to this new base size.
+// With the exception of this base font size expressed in pixels, font sizes are expressed in rem units.
+//
+// $sc-font-size-xxs - Double extra small font size
+// $sc-font-size-xs - Extra small font size
+// $sc-font-size-s - Small font size
+// $sc-font-size-m - Medium font size
+// $sc-font-size-l - Large font size
+// $sc-font-size-xl - Extra large font size
+// $sc-font-size-xxl - Double extra large font size
+// $sc-font-size-xxxl - Triple extra large font size
+// $sc-font-weight-light - Light font weight
+// $sc-font-weight-normal - Normal font weight
+// $sc-font-weight-semibold - Semibold font weight
+// $sc-font-weight-bold - Bold font weight
+//
+// Markup:
+// <p style="font-size: $sc-font-size-xxs">Good design is obvious. Great design is transparent <strong>$sc-font-size-xxs</strong>.</p>
+// <p style="font-size: $sc-font-size-xs">Good design is obvious. Great design is transparent <strong>$sc-font-size-xs</strong>.</p>
+// <p style="font-size: $sc-font-size-s">Good design is obvious. Great design is transparent <strong>$sc-font-size-s</strong>.</p>
+// <p style="font-size: $sc-font-size-m">Good design is obvious. Great design is transparent <strong>$sc-font-size-m</strong>.</p>
+// <p style="font-size: $sc-font-size-l">Good design is obvious. Great design is transparent <strong>$sc-font-size-l</strong>.</p>
+// <p style="font-size: $sc-font-size-xl">Good design is obvious. Great design is transparent <strong>$sc-font-size-xl</strong>.</p>
+// <p style="font-size: $sc-font-size-xxl">Good design is obvious. Great design is transparent <strong>$sc-font-size-xxl</strong>.</p>
+// <p style="font-size: $sc-font-size-xxxl">Good design is obvious. Great design is transparent <strong>$sc-font-size-xxxl</strong>.</p>
+// <p style="font-weight: $sc-font-weight-light;">Freedom lies in being bold. - font weight $sc-font-weight-light.</p>
+// <p style="font-weight: $sc-font-weight-normal;">Freedom lies in being bold. - font weight $sc-font-weight-normal.</p>
+// <p style="font-weight: $sc-font-weight-semibold;">Freedom lies in being bold. - font weight $sc-font-weight-semibold.</p>
+// <p style="font-weight: $sc-font-weight-bold;">Freedom lies in being bold. - font weight $sc-font-weight-bold.</p>
+//
+// Styleguide 1.2
+$sc-font-size-base: 14px;
+$sc-font-size-xxs: 0.75rem;
+$sc-font-size-xs: 0.87rem;
+$sc-font-size-s: 0.93rem;
+$sc-font-size-m: 1rem;
+$sc-font-size-l: 1.067rem;
+$sc-font-size-xl: 1.2rem;
+$sc-font-size-xxl: 1.47rem;
+$sc-font-size-xxxl: 1.73rem;
+
+//Font Family
+//@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+/* ----------------------------------------------------------------
+	Typography
+-----------------------------------------------------------------*/
+/* @font-face {
+    font-family: 'avenir';
+    src: url('fonts/Font2.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+} */
+$font-custom-path: getThemeAssetsPath("fonts");
+@font-face {
+    font-family: 'avenir';
+    src: url('#{$font-custom-path}/Avenir/avenirltstd-light-webfont.eot');
+    src: url('#{$font-custom-path}/Avenir/avenirltstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$font-custom-path}/Avenir/avenirltstd-light-webfont.woff') format('woff'),
+         url('#{$font-custom-path}/Avenir/avenirltstd-light-webfont.ttf') format('truetype'),
+         url('#{$font-custom-path}/Avenir/avenirltstd-light-webfont.svg#AvenirLight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir';
+    src: url('#{$font-custom-path}/Avenir/avenir-roman.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir';
+    src: url('#{$font-custom-path}/Avenir/avenirltstd-medium-webfont.eot');
+    src: url('#{$font-custom-path}/Avenir/avenirltstd-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$font-custom-path}/Avenir/avenirltstd-medium-webfont.woff') format('woff'),
+         url('#{$font-custom-path}/Avenir/avenirltstd-medium-webfont.ttf') format('truetype'),
+         url('#{$font-custom-path}/Avenir/avenirltstd-medium-webfont.svg#AvenirLTStd65Medium') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir';
+    src: url('#{$font-custom-path}/Avenir/avenirltstd-heavy-webfont.eot');
+    src: url('#{$font-custom-path}/Avenir/avenirltstd-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$font-custom-path}/Avenir/avenirltstd-heavy-webfont.woff') format('woff'),
+         url('#{$font-custom-path}/Avenir/avenirltstd-heavy-webfont.ttf') format('truetype'),
+         url('#{$font-custom-path}/Avenir/avenirltstd-heavy-webfont.svg#AvenirLTStd85Heavy') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'avenir';
+    src: url('#{$font-custom-path}/Avenir/Avenir-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+$font-family-primary:'avenir', Helvetica, Arial, sans-serif; //Regular fonts
+$font-family-secondary:'avenir', Helvetica, Arial, sans-serif; //Titles, sub-titles
+
+$sc-font-family: $font-family-primary;
+
+
+//Custom Font Size
+$theme-normal-font-size: 			    16px; //Regular font size (body, normal fonts, general typos)
+
+// Font weight
+$sc-font-weight-light: 300;
+$sc-font-weight-normal: 400;
+$sc-font-weight-semibold: 600;
+$sc-font-weight-bold: 700;
+
+$sc-navigation-icon-size: 25px;
+
+// TTcustom Size
+$theme-xs-font-size:              10px;
+$theme-sm-font-size:              12px;
+$theme-md-font-size:              14px;
+$theme-lg-font-size:              18px;
+$theme-xl-font-size:              25px;
+
+$home-slider-ft-size: 			  60px;
+$home-full-banners-ft-size: 	  40px;
+$home-merch-title-ft-size:        35px;
+$home-top-banner-font-size:       $home-full-banners-ft-size;
+
+$theme-landings-font-size:        $theme-xl-font-size;
+
+// TTcustom Weight
+$theme-font-weight-light:         300;
+$theme-font-weight-normal:        400;
+$theme-font-weight-semi-bold:     600;

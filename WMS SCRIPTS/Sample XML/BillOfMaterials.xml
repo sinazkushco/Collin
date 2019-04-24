@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BillOfMaterials xmlns="http://www.manh.com/ILSNET/Interface">
+  <BillOfMaterial>
+    <Active>Y</Active>
+    <InternalBomHeaderNum>12</InternalBomHeaderNum>
+    <Item>GFDHDH</Item>
+    <BillOfMaterialDetails>
+      <BillOfMaterialDetail>
+        <BuildSequence>1</BuildSequence>
+        <InternalBomDetailNum>1</InternalBomDetailNum>
+        <InternalBomHeaderNum>1</InternalBomHeaderNum>
+        <Item>GFDHDH</Item>
+        <QtyNeededPerItem>1</QtyNeededPerItem>
+        <QtyUm>1</QtyUm>
+      </BillOfMaterialDetail>
+    </BillOfMaterialDetails>
+  </BillOfMaterial>
+</BillOfMaterials>

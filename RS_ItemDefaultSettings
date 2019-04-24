@@ -1,0 +1,11 @@
+function RS_ItemDefaultSettings(type,form)
+{
+    if (type == 'create')
+    {
+        //nlapiSetFieldValue('costingmethod', 'FIFO');
+		nlapiSetFieldValue('istaxable', 'T');
+        nlapiSetFieldValue('tracklandedcost', 'T');
+      	var defaultMetaField = "<meta name='keywords' content='cannabis, marijuana, packaging, containers,<%=getCurrentAttribute('item','custitem_metakeywords')%>'/><meta name='description' content='<%=getCurrentAttribute('item','custitem_metadescription')%>'/>";
+      	nlapiSetFieldValue('metataghtml',defaultMetaField)
+    }
+}

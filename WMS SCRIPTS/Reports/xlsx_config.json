@@ -1,0 +1,11 @@
+{
+	"paths": {
+		"underscore": "../Libraries/underscore-min",
+		"XLSX": "../Libraries/xlsx.core"
+	},
+	"shim": {
+		"XLSX": {
+			"exports": "XLSX"
+		}
+	}
+}

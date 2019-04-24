@@ -1,0 +1,18 @@
+function gtmScheduleController()
+{
+   var   gtm_record = 'customrecord_ns_gtm_datalayer'
+   ,   gtm_record_column = new nlobjSearchColumn('lastmodified')
+   ,   gtm_record_list = nlapiSearchRecord(gtm_record, null, null, gtm_record_column) || [];
+   
+   gtm_record_list.forEach(function(record)
+   {
+
+      var record_saved_date = nlapiStringToDate ( record.getValue('lastmodified'), 'datetime').getTime()
+      ,   current_date = new Date().getTime();
+
+      if(current_date - record_saved_date <= 3600) {
+         nlapiDeleteRecord(gtm_record, record.id);
+      }
+
+   });
+}

@@ -1,0 +1,40 @@
+/**
+ * The purpose of this script is to ...
+ *
+ *  This script can be deployed on ....
+ *  The model is... {assignAccountForUnapprovedPayments}
+ * */
+
+// cut and paste entry points into here.
+
+//https://system.na2.netsuite.com/app/help/helpcenter.nl?fid=section_N2959270.html
+
+/** fires when a field is changed by the user or client calls, including beforeLoad events
+ * essentially, js.onChange
+ * @param {string}      type    The sublist internal ID (optional).
+ * @param {string}      name    The field internal ID.
+ * @param {string|null} linenum If sublist: line number starting at index 1, not 0.  If body field, pass in null.
+ * */
+
+function assignAccountForUnapprovedPayments(type, name, linenum){
+    var context = nlapiGetContext();
+    var exec = context.getExecutionContext();
+
+    if(exec == 'userinterface') {
+        if(name == 'chargeit') {
+            if(nlapiGetFieldValue('status') == 'Unapproved Payment'){
+                var fieldValue = nlapiGetFieldValue('chargeit');
+                if(window) {
+                    window.accountValue = nlapiGetFieldValue('account');
+                    if(fieldValue == 'T') {
+                        nlapiSetFieldValue('account', '521');
+                        // nlapiSetFieldValue('undepfunds', 'F');
+                        // console.log('Set account to 521 and undepfunds to false', nlapiGetFieldValue('account'), nlapiGetFieldValue('undepfunds'))
+                    } else if (window.accountValue) {
+                        nlapiSetFieldValue('account', window.accountValue);
+                    }
+                }
+            }
+        }
+    }
+}

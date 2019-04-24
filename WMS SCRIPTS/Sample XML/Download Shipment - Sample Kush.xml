@@ -1,0 +1,82 @@
+<Shipments>
+  <Shipment>
+    <Action>SAVE</Action>
+    <UserDef1>Sales Order Number</UserDef1>
+    <UserDef3>Signature Required</UserDef3>
+    <UserDef4>Saturday Service</UserDef4>
+    <UserDef5>Insurance?[ignore for now]</UserDef5>
+    <AllocateComplete>Y</AllocateComplete>
+    <AlternateEmailAddress>FedEx Ship Alert</AlternateEmailAddress>
+    <Carrier>
+      <Action>New</Action>
+      <Carrier>Custom Carrier Field (based on Shipping Method to group by actual carrier)</Carrier>
+      <Service>Shipping Method</Service>
+    </Carrier>
+    <Comments>
+      <Comment>
+        <Action>SAVE</Action>
+        <CommentType>Type that matches values in SCALE</CommentType>
+        <Text>Header Comment Text (Memo for example)</Text>
+      </Comment>
+    </Comments>
+    <Customer>
+      <Company>Subsidiary</Company>
+      <CustomerAddress>
+        <Action>SAVE</Action>
+        <Address1>Billing Address 1</Address1>
+        <Address2>Billing Address 2</Address2>
+        <Address3>Billing Address 3</Address3>
+        <City>Billing City</City>
+        <Country>Billing Country</Country>
+        <Name>Billing Addressee</Name>
+        <PhoneNum>Billing Phone</PhoneNum>
+        <PostalCode>Billing Zip</PostalCode>
+        <ResidentialFlag>Billing Residential Address</ResidentialFlag>
+        <State>Billing State</State>
+      </CustomerAddress>      
+      <Customer>Customer Name</Customer>
+      <CustomerCategories>
+        <Category1>Serviced By</Category1>
+        <Category2>Account Manager</Category2>
+      </CustomerCategories>
+      <ShipTo>Shipping Addressee</ShipTo>
+      <ShipToAddress>
+        <Action>SAVE</Action>
+        <Address1>Shipping Address 1</Address1>
+        <Address2>Shipping Address 2</Address2>
+        <Address3>Shipping Address 3</Address3>
+        <City>Shipping City</City>
+        <Country>Shipping Country</Country>
+        <Name>Shipping Addressee</Name>
+        <PhoneNum>Shipping Phone</PhoneNum>
+        <PostalCode>Shipping Zip</PostalCode>
+        <ResidentialFlag>Shipping Residential Address</ResidentialFlag>
+        <State>Shipping State</State>
+      </ShipToAddress>
+    </Customer>
+    <CustomerPO>PO Number</CustomerPO>
+    <ErpOrder>Internal ID</ErpOrder>
+    <OrderDate>Date (2018-11-14T00:00:00)</OrderDate>
+    <OrderType>Type</OrderType>
+    <ScheduledShipDate>Expected Ship Date (2018-11-14T00:00:00)</ScheduledShipDate>
+    <ShipmentId>Sales Order Number</ShipmentId>
+    <Warehouse>Location</Warehouse>
+    <Details>
+      <ShipmentDetail>
+        <Action>SAVE</Action>
+        <Comments>
+          <Comment>
+            <Action>SAVE</Action>
+            <CommentType>Type that matches values in SCALE</CommentType>
+            <Text>Detail Comment Text (Vape Instructions for example)</Text>
+          </Comment>
+        </Comments>
+        <ErpOrderLineNum>Line Unique ID</ErpOrderLineNum>
+        <SKU>
+          <Item>SKU</Item>
+          <Quantity>Quantity</Quantity>
+        </SKU>
+      </ShipmentDetail>
+    </Details>
+  </Shipment>
+</Shipments>

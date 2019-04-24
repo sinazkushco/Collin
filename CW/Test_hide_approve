@@ -1,0 +1,14 @@
+
+function beforeLoad(type, form) {
+    if (nlapiGetContext().getExecutionContext() == 'userinterface') {
+        var role = nlapiGetRole();
+        if(role == 1005 || role == 1006 || role == 1007 || 
+            role == 1008 || role == 1010 || role == 1015 || 
+            role == 1025 || role == 1027 || role == 1044 ){
+             form.removeButton({
+               id :'approve',
+              });
+
+            }
+    }
+} 

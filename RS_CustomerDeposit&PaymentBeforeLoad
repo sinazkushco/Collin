@@ -1,0 +1,15 @@
+function BSP_CustomerDepositBeforeLoad(type,form)
+{
+    if (type == 'create')
+    {
+        var currentContext = nlapiGetContext();
+        if (nlapiGetFieldValue('custbody1') !== undefined){
+            var currentUserID = currentContext.getUser();
+            nlapiSetFieldValue('custbody1', currentUserID);
+        }
+
+        var location = currentContext.getLocation();
+        nlapiSetFieldValue('location', location);
+        //nlapiSetFieldDisabled('location', true)
+    }
+}

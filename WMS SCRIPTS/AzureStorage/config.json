@@ -1,0 +1,5 @@
+{
+    "paths" : {
+       "underscore" : "../AzureStorage/Libraries/underscore-min"
+    }
+}

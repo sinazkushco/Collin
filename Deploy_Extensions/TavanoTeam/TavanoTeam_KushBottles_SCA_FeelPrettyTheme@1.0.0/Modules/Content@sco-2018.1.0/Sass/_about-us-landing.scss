@@ -1,0 +1,162 @@
+// General settings
+section#theme-about-us {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+// Top banner
+div.about-us-top-section {
+	@extend .this-full-width;
+	background-attachment: fixed !important;
+  @include parallax-back (cover);
+  background-position: bottom;
+  padding: 180px 0;
+  .row { margin:0; }
+  .row > div > .about-us-top-box {
+  	text-align: center;
+    height: 150px;
+    background: $theme-neutral-color-light;
+  }
+	span.about-us-number {
+    text-align: center;
+    font-size: $home-full-banners-ft-size;
+    line-height: $sc-padding-lv1 * 10;
+    color: $theme-primary-ft-color;
+    margin-top: 37px;
+    float: left;
+    width: 100%;
+    @media (max-width: $screen-sm-min) { margin-top: $sc-padding-lv1 * 2; }
+	}
+	p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $theme-md-font-size;
+    font-weight: $sc-font-weight-bold;
+    letter-spacing: 1px;
+    line-height: 0;
+    color: $theme-primary-ft-color;
+    margin-top: $sc-padding-lv1 * 2;
+    float: left;
+    width: 100%;
+	}
+	@media (max-width: $screen-sm-min) {
+    padding: 7% 0;
+    .row > div > .about-us-top-box {
+    	margin-bottom: 12px;
+    	min-height: 100px;
+    	height: auto;
+		}
+		.about-us-number{
+			font-size: $theme-landings-font-size;
+			margin-top: 12px;
+		}
+		p {
+			font-size: $theme-normal-font-size;
+		}
+	}
+}
+
+// Newsletter banner
+div.container-aboutus-subscribe {
+	@extend .this-full-width;
+  background:$theme-primary-color;
+  padding: 3% 0;
+  .row {
+  	margin: 0 !important;
+  }
+	p {
+    font-size: $theme-lg-font-size;
+    font-weight: $sc-font-weight-normal;
+    text-align: right;
+    color: $theme-tertiary-color;
+    margin-top: $sc-padding-lv1 * 2;
+    float: right;
+  }
+  a.about-newsletter-btn {
+    display:inline-block;
+    @include btn($theme-tertiary-color);
+    color:$theme-primary-color;
+    //min-width: 172px;
+    //min-height: 62px;
+    width:auto; height:auto;
+    text-align: center;
+    line-height: normal;
+    padding: $sc-padding-lv1 * 3 $sc-padding-lv1 * 4;
+  }
+  @media (max-width: $screen-md-min) {
+	   p { font-size: $theme-md-font-size; }
+  }
+	@media (max-width: $screen-sm-min) {
+		padding: 7% 0;
+		.row > div {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 12px;
+		}
+		.about-newsletter-btn {
+			width: 100%;
+		}
+		p {
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+    }
+	}
+}
+
+.about-us-copy{
+  h1{font-size:$theme-landings-font-size; margin-top:$sc-padding-lv1*4;}
+  p{margin:$sc-padding-lv1*2 0;}
+  div > img{margin:$sc-padding-lv1*2 0;}
+  h2, h3{margin:$sc-padding-lv1 0;}
+}
+
+// Brands
+div.about-us-brands {
+	@extend .this-full-width;
+	padding: 60px 0;
+	.row {
+    margin: 0;
+    > div {
+  		padding-bottom: $sc-padding-lv1 * 4;
+      @media (max-width: $screen-sm-min) {
+        width: calc(100%/3);
+      }
+      @media (max-width: $screen-xs-min) {
+        width: 100%;
+      }
+  	}
+  }
+	h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: $theme-landings-font-size;
+    //font-weight: $sc-font-weight-light;
+    margin-bottom: $sc-padding-lv1 * 6;
+    text-transform: uppercase;
+    //color: $sc-color-secondary;
+		@media (max-width: $screen-md-min) {
+			font-size: $home-top-banner-font-size;
+		}
+	}
+	img {
+		width: 100%;
+	}
+}
+
+
+// Bottom images
+div.about-us-bottom-banners {
+  display: inline-block;
+  margin-bottom: - $sc-padding-lv1;
+	div.row {
+		margin: 0 !important;
+	}
+	div[class*="col-md-"], div[class*="col-sm-"],  div[class*="col-xs-"] {
+		padding: 0;
+	}
+	img {
+    width: 100%;
+    float: left;
+  }
+}

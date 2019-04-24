@@ -1,0 +1,927 @@
+<Items>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Natural Products</Department>
+		<Desc>Jack Herer (Sativa) Terpene Blend - 3Kg</Desc>
+		<Item>NP-0010703</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>112</ItemClass>
+		</ItemClass>
+		<LongDesc>Jack Herer (Sativa) Terpene Blend - 3Kg</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Tins Cases</Department>
+		<Desc>LocTin 76.2 x 30mm 150ct</Desc>
+		<Item>TC-0010704</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>13</ItemClass>
+		</ItemClass>
+		<LongDesc>LocTin 76.2 x 30mm 150ct
+</LongDesc>
+		<LotControlled>N</LotControlled>
+		<NetPrice>.63316</NetPrice>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+				<Weight>0.63316</Weight>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Vape Products</Department>
+		<Desc>CMP : Gold Flora CCELL 0.5ml Disposable w/ Gold Wrapper 1ct</Desc>
+		<Item>VP-0010705</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>57</ItemClass>
+		</ItemClass>
+		<LongDesc>Gold Flora CCELL 0.5ml Disposable w/ Gold Wrapper 1ct</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Desc>CUSTOM : NW Kind</Desc>
+		<Item>14918</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+		</ItemClass>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Glass Jars & Lids</Department>
+		<Desc>CUSTOM : NW Kind : Custom Direct Print Lid 1ct</Desc>
+		<Item>JR-0010706</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>42</ItemClass>
+		</ItemClass>
+		<LongDesc>Custom Direct Print Lid 1ct</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Vape Products</Department>
+		<Desc>CMP : NW Kind 1.0ml Plastic CCELL Cart w/ Black Plastic MP 1ct</Desc>
+		<Item>VP-0010707</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>57</ItemClass>
+		</ItemClass>
+		<LongDesc>NW Kind 1.0ml Plastic CCELL Cart w/ Black Plastic MP 1ct </LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Vape Products</Department>
+		<Desc>CMP : NW Kind 0.5ml Plastic CCELL Cart w/ Black Plastic MP 1ct</Desc>
+		<Item>VP-0010708</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>57</ItemClass>
+		</ItemClass>
+		<LongDesc>NW Kind 0.5ml Plastic CCELL Cart w/ Black Plastic MP 1ct </LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Vape Products</Department>
+		<Desc>CMP : Phoenix 1.0ml Plastic CCELL Cart w/ Clear Flat MP 1ct</Desc>
+		<Item>VP-0010709</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>57</ItemClass>
+		</ItemClass>
+		<LongDesc>Phoenix 1.0ml Plastic CCELL Cart w/ Clear Flat MP 1ct</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Vape Products</Department>
+		<Desc>CMP : Phoenix 0.5ml Plastic CCELL Cart w/ Clear Flat MP 1ct</Desc>
+		<Item>VP-0010710</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>57</ItemClass>
+		</ItemClass>
+		<LongDesc>Phoenix 0.5ml Plastic CCELL Cart w/ Clear Flat MP 1ct</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Vape Products</Department>
+		<Desc>CMP : Soothe 0.5ml Soft White/Blue Disposable 1ct</Desc>
+		<Item>VP-0010711</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>57</ItemClass>
+		</ItemClass>
+		<LongDesc>Soothe 0.5ml Soft White/Blue Disposable 1ct</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Vape Products</Department>
+		<Desc>CMP : Adj Pre-Heat Slim Pen NO KIT, USB ONLY - Blank Silver 1ct</Desc>
+		<Item>VP-0010712</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>57</ItemClass>
+		</ItemClass>
+		<LongDesc>Adj Pre-Heat Slim Pen NO KIT, USB ONLY - Blank Silver 1ct</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Vape Products</Department>
+		<Desc>CMP : Adj Pre-Heat Slim Pen NO KIT, USB ONLY - Blank Black 1ct</Desc>
+		<Item>VP-0010713</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>57</ItemClass>
+		</ItemClass>
+		<LongDesc>Adj Pre-Heat Slim Pen NO KIT, USB ONLY - Blank Black 1ct</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Glass Jars & Lids</Department>
+		<Desc>CUSTOM : Critical 710 Concentrates : Critical Custom Palm N Turn Jar and Lid 1ct</Desc>
+		<Item>JR-0010714</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>42</ItemClass>
+		</ItemClass>
+		<LongDesc>Critical Custom Palm N Turn Jar and Lid 1ct</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Desc>CUSTOM : Cultivate Holdings</Desc>
+		<Item>14928</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+		</ItemClass>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Labels and Tamper Seals</Department>
+		<Desc>CUSTOM : Cultivate Holdings : CUSTOM : Cultivate Holdings "Bliss" 116mm Full Wrap Label</Desc>
+		<Item>LS-0010715</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>50</ItemClass>
+		</ItemClass>
+		<LongDesc>CUSTOM : Cultivate Holdings "Bliss" 116mm Full Wrap Label 1ct</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Labels and Tamper Seals</Department>
+		<Desc>CUSTOM : Cultivate Holdings : CUSTOM : Cultivate Holdings "Soothe" 116mm Full Wrap Label</Desc>
+		<Item>LS-0010716</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>50</ItemClass>
+		</ItemClass>
+		<LongDesc>CUSTOM : Cultivate Holdings "Soothe" 116mm Full Wrap Label 1ct</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Labels and Tamper Seals</Department>
+		<Desc>CUSTOM : Cultivate Holdings : CUSTOM : Cultivate Holdings "Slumber" 116mm Full Wrap Label</Desc>
+		<Item>LS-0010717</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>50</ItemClass>
+		</ItemClass>
+		<LongDesc>CUSTOM : Cultivate Holdings "Slumber" 116mm Full Wrap Label 1ct</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Labels and Tamper Seals</Department>
+		<Desc>CUSTOM : Cultivate Holdings : CUSTOM : Cultivate Holdings "Energize" 116mm Full Wrap Label</Desc>
+		<Item>LS-0010718</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>50</ItemClass>
+		</ItemClass>
+		<LongDesc>CUSTOM : Cultivate Holdings "Energize" 116mm Full Wrap Label 1ct</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Desc>CUSTOM : The Humboldt Cure</Desc>
+		<Item>14933</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+		</ItemClass>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Labels and Tamper Seals</Department>
+		<Desc>CUSTOM : The Humboldt Cure : CUSTOM : The Humboldt Cure Palm N Turn Lid Label 1ct</Desc>
+		<Item>LS-0010719</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>50</ItemClass>
+		</ItemClass>
+		<LongDesc>CUSTOM : The Humboldt Cure Palm N Turn Lid Label 1ct</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Labels and Tamper Seals</Department>
+		<Desc>CUSTOM : Khush Kush : CUSTOM Khush Kush : "Sticky Gorilla #4" Jar Lid Label 1ct</Desc>
+		<Item>LS-0010720</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>50</ItemClass>
+		</ItemClass>
+		<LongDesc>CUSTOM Khush Kush : "Sticky Gorilla #4" Jar Lid Label 1ct
+</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Labels and Tamper Seals</Department>
+		<Desc>CUSTOM : Khush Kush : CUSTOM Khush Kush : "Bell Ringer #4" Jar Lid Label 1ct</Desc>
+		<Item>LS-0010721</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>50</ItemClass>
+		</ItemClass>
+		<LongDesc>CUSTOM Khush Kush : "Bell Ringer #4" Jar Lid Label 1ct
+</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Labels and Tamper Seals</Department>
+		<Desc>CUSTOM : Khush Kush : CUSTOM Khush Kush : "Limited Edition" Jar Lid Label 1ct</Desc>
+		<Item>LS-0010722</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>50</ItemClass>
+		</ItemClass>
+		<LongDesc>CUSTOM Khush Kush : "Limited Edition" Jar Lid Label 1ct
+</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Labels and Tamper Seals</Department>
+		<Desc>CUSTOM : Khush Kush : CUSTOM Khush Kush : "Mendo Breath" Jar Lid Label 1ct</Desc>
+		<Item>LS-0010723</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>50</ItemClass>
+		</ItemClass>
+		<LongDesc>CUSTOM Khush Kush : "Mendo Breath" Jar Lid Label 1ct
+</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Labels and Tamper Seals</Department>
+		<Desc>CUSTOM : Khush Kush : CUSTOM Khush Kush : "Sweeties #6" Jar Lid Label 1ct</Desc>
+		<Item>LS-0010724</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>50</ItemClass>
+		</ItemClass>
+		<LongDesc>CUSTOM Khush Kush : "Sweeties #6" Jar Lid Label 1ct
+</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Labels and Tamper Seals</Department>
+		<Desc>CUSTOM : Khush Kush : CUSTOM Khush Kush : "Spiked Punch #5" Jar Lid Label 1ct</Desc>
+		<Item>LS-0010725</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>50</ItemClass>
+		</ItemClass>
+		<LongDesc>CUSTOM Khush Kush : "Spiked Punch #5" Jar Lid Label 1ct
+</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Labels and Tamper Seals</Department>
+		<Desc>CUSTOM : Khush Kush : CUSTOM Khush Kush : "Gelato Larry #2" Jar Lid Label 1ct</Desc>
+		<Item>LS-0010726</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>50</ItemClass>
+		</ItemClass>
+		<LongDesc>CUSTOM Khush Kush : "Gelato Larry #2" Jar Lid Label 1ct
+</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+	<Item>
+		<Action>SAVE</Action>
+		<UserDef1>No</UserDef1>
+		<Active>Y</Active>
+		<Company>Kush Bottles US</Company>
+		<Department>Compressed Gases</Department>
+		<Desc>Industrial Grade – Nitrogen 150 FT3</Desc>
+		<Item>GS-0010727</Item>
+		<ItemCategories>
+			<Action>SAVE</Action>
+			<Category1>A</Category1>
+		</ItemCategories>
+		<ItemClass>
+			<Action>SAVE</Action>
+			<ItemClass>158</ItemClass>
+		</ItemClass>
+		<LongDesc>Industrial Grade – Nitrogen 150 FT3</LongDesc>
+		<LotControlled>N</LotControlled>
+		<UOMS>
+			<UOM>
+				<Action>SAVE</Action>
+				<ConvQty>1</ConvQty>
+				<QtyUm>Eaches</QtyUm>
+				<TreatAsLoose>Y</TreatAsLoose>
+			</UOM>
+		</UOMS>
+		<XRefs>
+			<XRef>
+				<Action>SAVE</Action>
+				<XRefUM>Eaches</XRefUM>
+			</XRef>
+		</XRefs>
+	</Item>
+</Items>

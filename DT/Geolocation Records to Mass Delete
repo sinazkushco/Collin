@@ -1,0 +1,49 @@
+/**
+ *  honestly with the way mass update works, these checks arent necessary
+ *      but there is no such thing as 'too safe' when you are deleting records from NetSuite.
+ *      especially when you are deleting over 16000 record.
+ *
+ * @param recordType    passed in by mass update
+ * @param recordID      passed in by mass update
+ */
+function delete_records(recordType, recordID)
+{
+    nlapiLogExecution('DEBUG','1recordType param: '+recordType,typeof recordType);
+    nlapiLogExecution('DEBUG','2recordID param: '+recordID,typeof recordID);
+    var recordIDasInt = parseInt(recordID,10);
+    nlapiLogExecution('DEBUG','3recordID parsed: '+recordIDasInt,typeof recordIDasInt);
+    var withinRange = recordIDasInt > 41020 && recordIDasInt < 57957; //sets to true if within range, false if not
+    nlapiLogExecution('DEBUG','4withinRange '+withinRange,typeof withinRange);
+    if (recordType == 'customrecord_geolocation' && withinRange == true){
+        nlapiDeleteRecord(recordType, recordIDasInt); // Delete record
+        nlapiLogExecution('DEBUG','5we inside','the conditional');
+    }
+    nlapiLogExecution('DEBUG','END','END');
+}
+
+
+
+/**
+ *  sample search to execute to verify if i did it correctly.  this search should return 0
+ *
+ * @type {nlobjSearchResult[]}
+ */
+/*
+var arrayOfSearchResults = nlapiSearchRecord("customrecord_geolocation",null,
+    [
+        ["externalidstring","isnotempty",""],
+        "AND",
+        ["isinactive","is","T"],
+        "AND",
+        ["custrecord_city","isempty",""]
+    ],
+    [
+        new nlobjSearchColumn("internalid",null,null),
+        new nlobjSearchColumn("custrecord_zip",null,null),
+        new nlobjSearchColumn("custrecord_city",null,null),
+        new nlobjSearchColumn("custrecord_county",null,null),
+        new nlobjSearchColumn("custrecord_state",null,null),
+        new nlobjSearchColumn("custrecord_territory",null,null),
+        new nlobjSearchColumn("externalid",null,null)
+    ]
+);*/

@@ -1,0 +1,33 @@
+.header-simplified-header{
+	height: $sc-main-nav-height;
+	background-color: $sc-top-menu-background-color;
+	box-shadow: 3px 0px 6px $sc-header-shadow-color;
+}
+
+.header-simplified-header-logo{
+	text-align: center;
+
+	.header-logo-image{
+		width: auto;
+	}
+}
+
+// TT new styles
+.checkout-layout-header {
+
+		 margin-bottom: 35px !important;
+	 
+}
+
+.header-simplified-header {
+	height: auto;
+	background: $theme-header-bck-color-gral;
+	padding: 15px 0;
+	// Logo
+	.header-logo {
+		display: table;
+		width: auto;
+		margin: 0 auto;
+		.header-logo-image { max-height: 35px; }
+	}
+}

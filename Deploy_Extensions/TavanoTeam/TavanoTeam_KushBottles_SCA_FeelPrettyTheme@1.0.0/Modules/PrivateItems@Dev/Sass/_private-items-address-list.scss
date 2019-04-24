@@ -1,0 +1,40 @@
+.private-items-address-list {
+	display: flex;
+	flex-wrap: wrap;
+	.address-details {
+		flex-basis: 50%;
+		display: inline-flex;
+		padding: $sc-padding-lv2;
+		cursor: default;
+		// Ensure that address tiles are edge-to-edge but still centered
+		&:nth-child(odd) {
+			padding-left: 0;
+			padding-right: $sc-padding-lv2;
+		}
+		&:nth-child(even) {
+			padding-left: $sc-padding-lv2;
+			padding-right: 0;
+		}
+	}
+	.address-details-container {
+		width: 100%;
+		border: solid 1px $theme-neutral-color;
+		padding: $sc-padding-lv2;
+	}
+	.selected-address .address-details-container {
+		background-color: $theme-neutral-color;
+	}
+}
+.private-items-address-control-new {
+	display: inline-block;
+	margin-top: $sc-padding-lv2;
+	svg, span {
+		vertical-align: middle;
+	}
+	svg {
+		$icon-size: 20px;
+		width: $icon-size;
+		height: $icon-size;
+		margin-right: $sc-margin-lv1;
+	}
+}

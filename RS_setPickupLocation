@@ -1,0 +1,37 @@
+function RS_SetShippingMethod(type,name)
+{
+    if (type == 'create')
+   	{      
+		
+		//Find value of Location field on form
+		var location=nlapiGetFieldValue('location');
+		
+		if (nlapiGetFieldValue('location') > 0){
+			  
+			//California
+			if (location == 1){
+				nlapiSetFieldValue('inpt_shipmethod', 'Local Pickup (Garden Grove, CA)');
+              	nlapiSetFieldValue('shipmethod', '10694');
+            }
+			
+			//Washington
+			else if (location == 2){
+				nlapiSetFieldValue('inpt_shipmethod', 'Local Pickup (Woodinville, WA)');
+              	nlapiSetFieldValue('shipmethod', '4365');
+            }    
+			
+			//Colorado
+			else if (location == 3){
+              	nlapiSetFieldValue('inpt_shipmethod', 'Local Pickup (Denver, CO)');
+      			nlapiSetFieldValue('shipmethod', '4364');
+              
+       		}
+          	//Lawndale
+			else if (location == 5){
+              	nlapiSetFieldValue('inpt_shipmethod', 'Local Pickup (Lawndale, CO)');
+      			nlapiSetFieldValue('shipmethod', '6646');
+              
+       		}
+        }
+    }
+}

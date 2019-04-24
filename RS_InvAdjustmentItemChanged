@@ -1,0 +1,14 @@
+function RS_InvAdjustmentItemChanged(type, name){
+	/*if (type == 'inventory')
+    {
+        if (name == 'item')
+        {	
+			var adjlocation = nlapiGetFieldValue('adjlocation');
+			if ((adjlocation == undefined) || (adjlocation == null) || (adjlocation == '')) {
+			}
+			else {
+				nlapiSetCurrentLineItemValue('inventory', 'location', adjlocation);
+			}
+		}
+	}*/
+}

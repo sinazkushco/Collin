@@ -1,0 +1,36 @@
+<Items>
+  <Item>
+    <Action>SAVE</Action>
+    <UserDef1>Hazmat / Dangerous Goods</UserDef1>
+    <Active>Reverse of NetSuite Inactive field</Active>
+    <Company>Subsidiary</Company>
+    <Department>Class</Department>
+    <Desc>Item Name</Desc>
+    <Item>SKU</Item>
+    <ItemCategories>
+      <Action>SAVE</Action>
+      <Category1>Default Item Classification</Category1>
+    </ItemCategories>
+    <LongDesc>Item Name</LongDesc>
+    <LotControlled>Lot Tracking</LotControlled>
+    <NetPrice>Average Cost</NetPrice>
+    <UOMS>
+      <UOM>
+        <Action>SAVE</Action>
+        <ConvQty>1</ConvQty>
+        <QtyUm>Eaches</QtyUm>
+        <TreatAsLoose>Combination of "Always ships individually" and "Does not require repackaging" (Reversed for SCALE, Y in SCALE means it needs to be packed, N means it can ship as is)</TreatAsLoose>
+        <Weight>Package Weight (converted to pounds)</Weight>
+      </UOM>
+    </UOMS>
+    <WebImg>Primary Image Field</WebImg>
+    <WebThumbnailImg>Primary Image Field</WebThumbnailImg>
+    <XRefs>
+      <XRef>
+        <Action>SAVE</Action>
+        <XRefItem>Old SKU</XRefItem>
+        <XRefUM>Eaches</XRefUM>
+      </XRef>
+    </XRefs>
+  </Item>
+</Items>

@@ -1,0 +1,95 @@
+{
+    "name": "SmartMerchand",
+    "fantasyName": "SmartMerchand",
+    "vendor": "TavanoTeam",
+    "type": "extension",
+    "cct": [
+        {
+            "icon": "img/cct_tavano_coolcct_icon.svg",
+            "settings_record": "customrecordcct_smart_merchand",
+            "registercct_id": "cct_smart_merchand",
+            "label": "Smart Merchand",
+            "description": "Smart Merchand",
+            "title": "Smart Merchand"
+        }
+    ],
+    "target": "SCA",
+    "version": "1.0.0",
+    "description": "Extension for Custom Merchand Section developed by TavanoTeam",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/SmartMerchand/Templates/cms_merchandizing_cell.tpl",
+                    "Modules/SmartMerchand/Templates/cms_merchandizing.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/SmartMerchand/Templates/cms_merchandizing_cell.tpl",
+                    "Modules/SmartMerchand/Templates/cms_merchandizing.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/SmartMerchand/Templates/cms_merchandizing_cell.tpl",
+                    "Modules/SmartMerchand/Templates/cms_merchandizing.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/SmartMerchand/Sass/_sm-smartmerch.scss",
+            "myaccount": "Modules/SmartMerchand/Sass/_sm-smartmerch.scss",
+            "checkout": "Modules/SmartMerchand/Sass/_sm-smartmerch.scss"
+        },
+        "files": [
+            "Modules/SmartMerchand/Sass/_sm-smartmerch.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/SmartMerchand/JavaScript/TavanoTeam.SmartMerchand.SmartMerchand.js",
+            "myaccount": "Modules/SmartMerchand/JavaScript/TavanoTeam.SmartMerchand.SmartMerchand.js",
+            "checkout": "Modules/SmartMerchand/JavaScript/TavanoTeam.SmartMerchand.SmartMerchand.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/SmartMerchand/JavaScript/TavanoTeam.SmartMerchand.SmartMerchand.js",
+                    "Modules/SmartMerchand/JavaScript/CMS.Merchandising.View.js",
+                    "Modules/SmartMerchand/JavaScript/CMS.Merchandizing.Cell.View.js",
+                    "Scripts/_tt_pull_ss_results.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/SmartMerchand/JavaScript/TavanoTeam.SmartMerchand.SmartMerchand.js",
+                    "Modules/SmartMerchand/JavaScript/CMS.Merchandising.View.js",
+                    "Modules/SmartMerchand/JavaScript/CMS.Merchandizing.Cell.View.js",
+                    "Scripts/_tt_pull_ss_results.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/SmartMerchand/JavaScript/TavanoTeam.SmartMerchand.SmartMerchand.js",
+                    "Modules/SmartMerchand/JavaScript/CMS.Merchandising.View.js",
+                    "Modules/SmartMerchand/JavaScript/CMS.Merchandizing.Cell.View.js",
+                    "Scripts/_tt_pull_ss_results.js"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+function RS_SetLocation(type,form)
+{
+    if (type != 'create')
+    {
+        return;
+    }
+
+	var currentContext = nlapiGetContext();
+    if ((currentContext == undefined) || (currentContext == null)) {
+        return;
+    }
+    else
+    {
+        var location = nlapiGetLocation(); // Get User Location
+		nlapiSetFieldValue('location', location);
+    }
+}

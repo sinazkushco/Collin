@@ -1,0 +1,51 @@
+// warehouse role = "1015";
+
+// 5021 account id = "246"
+// 5105 account id = "249"
+// 5015 account id = "243"
+// 5022 account id = "247"
+
+// roles to restrict: {
+//     warehouse staff : "1015",
+//     warehouse manager : "1008",
+//     Summit Operations : "1055",
+//     Director Of Operations : "1054", - not able to access page
+// }
+
+// File Name = "InventoryAdjustment_restrictAccount"
+
+
+function limit_account_fields() {
+    var context = nlapiGetContext()
+    var executionContext = context.getExecutionContext()
+    var role = context.getRole()
+    if(executionContext == 'userinterface'){
+        if(role == "1015" || role == "1008" || role == "1055" || role == "1054") {
+            try {
+                jQuery('#account_fs').on('click', function () {  // click handler for Location Field
+                    //get all tooltip content and put in array
+                    var account_array = jQuery('.uir-tooltip-content .dropdownDiv').children() 
+                    var limited_array = []
+                    //loop through location array and remove any matches to exclusion array
+                    for(var i = 0; i<account_array.length; i++){
+                        var current_account = account_array[i].innerHTML.split(' ')[0]
+                        if(current_account == '5021' || current_account == "5105" || current_account == "5015" || current_account == "5022"){
+                            limited_array.push(account_array[i])
+                        }
+                    }
+                    //remove current content provided by NS
+                    jQuery('.uir-tooltip-content .dropdownDiv div').remove();
+                    //append array with exclusions removed
+                    jQuery('.uir-tooltip-content .dropdownDiv').append(limited_array);
+                    jQuery('.uir-tooltip-content .dropdownDiv').css('height', 'auto')
+                });
+            }
+            catch (err) {
+                if(window && window.console){
+                    console.log(err);
+                }
+            }
+        }
+    }
+}
+

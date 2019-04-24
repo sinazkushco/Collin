@@ -1,0 +1,32 @@
+//userevent script
+//create button on customer record to give access and send password creation email to customer
+//customscript_create_cust_account_button
+//calls customscript_send_account_creation_email 
+//created by Collin
+
+function beforeload_apply_button(type,form) {
+    var context = nlapiGetContext();
+    var exec = context.getExecutionContext();
+    if (exec === 'userinterface') {
+        //add the create customer button to the form
+        if (type == 'view') {
+            var customer_has_access = nlapiGetFieldValue('giveaccess');
+            if (customer_has_access === 'F') {
+                form.setScript('customscript_send_account_creation_email');
+                form.addButton('custpage_account_create_button', 'Create Online Account', 'send_email_to_create_account()');
+                //defined in https://system.netsuite.com/app/common/media/mediaitem.nl?id=386049
+            }
+        }
+
+        //disable fields on the form so the user cannot POST data to the database
+        if ((type == "edit" || type == 'create') && context.getRole() != '3') {/* allow admins to still change fields */
+            if(context.getRole() != '1025'){
+                var fields_to_disable = ['password', 'password2', 'accessrole', 'giveaccess', 'sendemail']; //disable all these fields if give access is true
+                for (var i = 0; i < fields_to_disable.length; i++) {
+                    var field = form.getField(fields_to_disable[i]);
+                    field.setDisplayType('disabled');
+                }
+            }
+        }
+    }
+}

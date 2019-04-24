@@ -1,0 +1,13 @@
+/** Fires when Invoice or Sales Receipt form is being edited. Sets 'Select Message' field to '2' (Thank you for your business)
+ * 
+ * @param type      string          the sublist internal ID
+ * 
+ * */
+
+function selectEmailMessage(type){
+    var context = nlapiGetContext();
+    console.log(type)
+    if(type === 'edit' || type === 'view'){
+        nlapiSetFieldValue('messagesel', '2')
+        }
+}

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<WorkOrders xmlns="http://www.manh.com/ILSNET/Interface">
+    <WorkOrder>
+        <Company>Danone PF</Company>
+        <DueDate>2017-08-07T00:00:00</DueDate>
+        <FinishedItem>SKU</FinishedItem>
+        <InterfaceEntity>
+            <Action>SAVE</Action>
+            <CreationDateTimeStamp>2017-08-02T11:52:02</CreationDateTimeStamp>
+            <CreationProcessStamp>SAPEDI</CreationProcessStamp>
+            <DateTimeStamp>2017-08-02T11:52:02</DateTimeStamp>
+            <ProcessStamp>Interface INSDES DELV</ProcessStamp>
+            <UserDef1>4500009046</UserDef1>
+            <UserDef2>SKU</UserDef2>
+            <UserStamp>SAPEDI</UserStamp>
+        </InterfaceEntity>
+        <QtyToBeBuilt>2</QtyToBeBuilt>
+        <QtyUm>CS</QtyUm>
+        <Warehouse>QC70040</Warehouse>
+        <WorkOrderId>4500009046-10</WorkOrderId>
+    </WorkOrder>
+    <WorkOrder>
+        <Company>Danone PF</Company>
+        <DueDate>2017-08-07T00:00:00</DueDate>
+        <FinishedItem>43031</FinishedItem>
+        <InterfaceEntity>
+            <Action>SAVE</Action>
+            <CreationDateTimeStamp>2017-08-02T11:52:02</CreationDateTimeStamp>
+            <CreationProcessStamp>SAPEDI</CreationProcessStamp>
+            <DateTimeStamp>2017-08-02T11:52:02</DateTimeStamp>
+            <ProcessStamp>Interface INSDES DELV</ProcessStamp>
+            <UserDef1>4500009046</UserDef1>
+            <UserDef2>43031</UserDef2>
+            <UserStamp>SAPEDI</UserStamp>
+        </InterfaceEntity>
+        <QtyToBeBuilt>1</QtyToBeBuilt>
+        <QtyUm>CS</QtyUm>
+        <Warehouse>QC70040</Warehouse>
+        <WorkOrderId>4500009046-101</WorkOrderId>
+    </WorkOrder>
+</WorkOrders>

@@ -1,0 +1,982 @@
+<WMWROOT xmlns="http://www.manh.com/ILSNET/Interface">
+  <WMWDATA>
+    <WMFWUpload xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <Date>2008-03-12T07:58:59.5361324-07:00</Date>
+      <GroupIndex>1</GroupIndex>
+      <Id>566edf5e-8a9a-45fa-9c2c-addd3888f684</Id>
+      <NumGroups>1</NumGroups>
+      <NumRecs>22</NumRecs>
+      <Inventories>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T05:30:41.56</AgingDate>
+          <AllocatedQty>35.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>23</InternalID>
+          <InTransitQty>23.00000</InTransitQty>
+          <Permanent>N</Permanent>
+          <ReceivedDate>2008-03-05T05:30:41.56</ReceivedDate>
+          <SKU>
+            <Color>OTHER</Color>
+            <Company>ALLERGAN</Company>
+            <Desc>SENSATIONAL SKIN BROCHURE</Desc>
+            <HarmCode />
+            <Item>4942718</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <Size>ACTIVE</Size>
+            <StorageTemplate />
+            <BaseQty>2099.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>2099.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>2099.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>31860.00000</TotalVolume>
+          <TotalWeight>826.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T05:54:33.107</AgingDate>
+          <AllocatedQty>23.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>34</InternalID>
+          <InTransitQty>8.00000</InTransitQty>
+          <Permanent>Y</Permanent>
+          <ReceivedDate>2008-03-05T05:54:33.107</ReceivedDate>
+          <SKU>
+            <Company>CEPHALON</Company>
+            <Desc>ACTIQ FOLDER 8.5X11</Desc>
+            <HarmCode />
+            <Item>99632410</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <StorageTemplate />
+            <BaseQty>900.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>900.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>900.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>729.00000</TotalVolume>
+          <TotalWeight>18.90000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T05:52:48.013</AgingDate>
+          <AllocatedQty>15.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>3</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>Y</Permanent>
+          <ReceivedDate>2008-03-05T05:52:48.013</ReceivedDate>
+          <SKU>
+            <Company>CEPHALON</Company>
+            <Desc>9X12 ACTIQ ENVELOPE</Desc>
+            <HarmCode />
+            <Item>ACTENV</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <StorageTemplate />
+            <BaseQty>950.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>950.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>950.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>243.00000</TotalVolume>
+          <TotalWeight>6.30000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T13:49:58.733</AgingDate>
+          <AllocatedQty>0.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>112</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>N</Permanent>
+          <ReceivedDate>2008-03-05T13:49:58.733</ReceivedDate>
+          <SKU>
+            <Color>OTHER</Color>
+            <Company>CEPHALON</Company>
+            <Desc>9X12 ACTIQ ENVELOPE</Desc>
+            <HarmCode />
+            <Item>ACTENV</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <Size>ACTIVE</Size>
+            <StorageTemplate />
+            <Style>ACTIQ</Style>
+            <BaseQty>10.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>10.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>10.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Quarantine</Status>
+          <SuspenseQty>7.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>189.00000</TotalVolume>
+          <TotalWeight>4.90000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T05:54:08.687</AgingDate>
+          <AllocatedQty>20.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>4</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>Y</Permanent>
+          <ReceivedDate>2008-03-05T05:54:08.687</ReceivedDate>
+          <SKU>
+            <Company>PROMOTECH</Company>
+            <Desc>PROMOTECH PLASTIC PEN</Desc>
+            <HarmCode />
+            <Item>BDP020</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <StorageTemplate />
+            <BaseQty>974.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>974.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>974.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>4590.00000</TotalVolume>
+          <TotalWeight>119.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T06:16:50.03</AgingDate>
+          <AllocatedQty>0.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>66</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>N</Permanent>
+          <ReceivedDate>2008-03-05T06:16:50.03</ReceivedDate>
+          <SKU>
+            <Company>PROMOTECH</Company>
+            <Desc>Sample Bill of Materials Component Item 1</Desc>
+            <HarmCode />
+            <Item>BOM COMPONENT ITEM 1</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <StorageTemplate />
+            <BaseQty>956.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>956.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>956.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>0.00000</TotalVolume>
+          <TotalWeight>0.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T06:09:09.343</AgingDate>
+          <AllocatedQty>0.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>60</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>N</Permanent>
+          <ReceivedDate>2008-03-05T06:09:09.343</ReceivedDate>
+          <SKU>
+            <Company>PROMOTECH</Company>
+            <Desc>Sample Bill of Materials Component Item 1</Desc>
+            <HarmCode />
+            <Item>BOM COMPONENT ITEM 1</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <StorageTemplate />
+            <BaseQty>10.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>10.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>10.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Quarantine</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>0.00000</TotalVolume>
+          <TotalWeight>0.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T06:17:01.827</AgingDate>
+          <AllocatedQty>0.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>71</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>N</Permanent>
+          <ReceivedDate>2008-03-05T06:17:01.827</ReceivedDate>
+          <SKU>
+            <Company>PROMOTECH</Company>
+            <Desc>Sample Bill of Materials Component Item 2</Desc>
+            <HarmCode />
+            <Item>BOM COMPONENT ITEM 2</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <StorageTemplate />
+            <BaseQty>978.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>978.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>978.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>0.00000</TotalVolume>
+          <TotalWeight>0.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T06:09:22.59</AgingDate>
+          <AllocatedQty>0.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>61</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>N</Permanent>
+          <ReceivedDate>2008-03-05T06:09:22.59</ReceivedDate>
+          <SKU>
+            <Company>PROMOTECH</Company>
+            <Desc>Sample Bill of Materials Component Item 2</Desc>
+            <HarmCode />
+            <Item>BOM COMPONENT ITEM 2</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <StorageTemplate />
+            <BaseQty>10.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>10.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>10.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Quarantine</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>0.00000</TotalVolume>
+          <TotalWeight>0.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T06:17:07.857</AgingDate>
+          <AllocatedQty>0.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>68</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>N</Permanent>
+          <ReceivedDate>2008-03-05T06:17:07.857</ReceivedDate>
+          <SKU>
+            <Company>PROMOTECH</Company>
+            <Desc>Sample Bill of Materials Component Item 3</Desc>
+            <HarmCode />
+            <Item>BOM COMPONENT ITEM 3</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <StorageTemplate />
+            <BaseQty>934.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>934.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>934.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>0.00000</TotalVolume>
+          <TotalWeight>0.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T06:09:37.983</AgingDate>
+          <AllocatedQty>0.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>62</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>N</Permanent>
+          <ReceivedDate>2008-03-05T06:09:37.983</ReceivedDate>
+          <SKU>
+            <Company>PROMOTECH</Company>
+            <Desc>Sample Bill of Materials Component Item 3</Desc>
+            <HarmCode />
+            <Item>BOM COMPONENT ITEM 3</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <StorageTemplate />
+            <BaseQty>10.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>10.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>10.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Quarantine</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>0.00000</TotalVolume>
+          <TotalWeight>0.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T06:18:58.467</AgingDate>
+          <AllocatedQty>0.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>77</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <ManufacturedDate>2008-03-05T16:22:11</ManufacturedDate>
+          <Permanent>N</Permanent>
+          <ReceivedDate>2008-03-05T16:22:11</ReceivedDate>
+          <SKU>
+            <Company>PROMOTECH</Company>
+            <Desc>Sample Bill of Materials Finished Item</Desc>
+            <HarmCode />
+            <Item>BOM FINISHED ITEM</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <StorageTemplate />
+            <BaseQty>22.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>22.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>22.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>0.00000</TotalVolume>
+          <TotalWeight>0.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T05:30:53.717</AgingDate>
+          <AllocatedQty>20.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>5</InternalID>
+          <InTransitQty>10.00000</InTransitQty>
+          <Permanent>Y</Permanent>
+          <ReceivedDate>2008-03-05T05:30:53.717</ReceivedDate>
+          <SKU>
+            <Color>OTHER</Color>
+            <Company>ALLERGAN</Company>
+            <Desc>COSMETIC BAG</Desc>
+            <HarmCode />
+            <Item>F407008</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <Size>ACTIVE</Size>
+            <StorageTemplate />
+            <BaseQty>1000.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>1000.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>1000.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>1458.00000</TotalVolume>
+          <TotalWeight>37.80000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T05:54:15.937</AgingDate>
+          <AllocatedQty>20.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>6</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>Y</Permanent>
+          <ReceivedDate>2008-03-05T05:54:15.937</ReceivedDate>
+          <SKU>
+            <Color>OTHER</Color>
+            <Company>PROMOTECH</Company>
+            <Desc>JIFFY MAILERS</Desc>
+            <HarmCode />
+            <Item>JIFFYMAILER7X12</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <Size>ACTIVE</Size>
+            <StorageTemplate />
+            <BaseQty>1240.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>1240.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>1240.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>5400.00000</TotalVolume>
+          <TotalWeight>140.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T05:53:01.153</AgingDate>
+          <AllocatedQty>18.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>7</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>Y</Permanent>
+          <ReceivedDate>2008-03-05T05:53:01.153</ReceivedDate>
+          <SKU>
+            <Color>OTHER</Color>
+            <Company>NOVEN THERAPEUTICS</Company>
+            <Desc>LITHOBID SALES AID</Desc>
+            <HarmCode />
+            <Item>LB0501A</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <Size>ACTIVE</Size>
+            <StorageTemplate />
+            <BaseQty>920.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>920.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>920.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>864.00000</TotalVolume>
+          <TotalWeight>22.40000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T05:54:37.593</AgingDate>
+          <AllocatedQty>16.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>8</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>Y</Permanent>
+          <ReceivedDate>2008-03-05T05:54:37.593</ReceivedDate>
+          <SKU>
+            <Company>NOVEN THERAPEUTICS</Company>
+            <Desc>LITHOBID LASER POINTERS</Desc>
+            <HarmCode />
+            <Item>LB604BDL25</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <StorageTemplate />
+            <BaseQty>920.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>920.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>920.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>38.25000</TotalVolume>
+          <TotalWeight>11.90000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T05:53:48.577</AgingDate>
+          <AllocatedQty>0.00000</AllocatedQty>
+          <ExpirationDate>2010-01-01T00:00:00</ExpirationDate>
+          <InternalID>53</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>N</Permanent>
+          <ReceivedDate>2008-03-05T05:53:48.577</ReceivedDate>
+          <SKU>
+            <Color>RX</Color>
+            <Company>NOVEN THERAPEUTICS</Company>
+            <Desc>LITHOBID TABLETS 300MG 100CT</Desc>
+            <HarmCode />
+            <Item>LITHOBID300MG100Q</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <Size>ACTIVE</Size>
+            <StorageTemplate />
+            <BaseQty>980.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>980.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Lot>1111</Lot>
+            <Quantity>980.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>26460.00000</TotalVolume>
+          <TotalWeight>686.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T13:14:50.217</AgingDate>
+          <AllocatedQty>20.00000</AllocatedQty>
+          <ExpirationDate>2010-01-01T00:00:00</ExpirationDate>
+          <InternalID>9</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>Y</Permanent>
+          <ReceivedDate>2008-03-05T13:14:50.217</ReceivedDate>
+          <SKU>
+            <Company>NOVEN THERAPEUTICS</Company>
+            <Desc>LITHOBID TABLETS 300MG 100CT</Desc>
+            <HarmCode />
+            <Item>LITHOBID300MG100Q</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <StorageTemplate />
+            <BaseQty>60.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>60.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Lot>100</Lot>
+            <Quantity>60.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>810.00000</TotalVolume>
+          <TotalWeight>21.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T05:54:25.607</AgingDate>
+          <AllocatedQty>0.00000</AllocatedQty>
+          <ExpirationDate>9999-12-31T23:59:59</ExpirationDate>
+          <InternalID>56</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>N</Permanent>
+          <ReceivedDate>2008-03-05T05:54:25.607</ReceivedDate>
+          <SKU>
+            <Color>OTHER</Color>
+            <Company>PROMOTECH</Company>
+            <Desc>ARTHRITIS HUDDLE WALL CHARTS</Desc>
+            <HarmCode />
+            <Item>MB10636BDL25</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <Size>DESTROYED</Size>
+            <StorageTemplate />
+            <BaseQty>980.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>980.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Quantity>980.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Hold</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>26460.00000</TotalVolume>
+          <TotalWeight>686.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T05:31:59.67</AgingDate>
+          <AllocatedQty>41.00000</AllocatedQty>
+          <ExpirationDate>4712-12-31T00:00:00</ExpirationDate>
+          <InternalID>11</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>Y</Permanent>
+          <ReceivedDate>2008-03-05T05:31:59.67</ReceivedDate>
+          <SKU>
+            <Company>ALLERGAN</Company>
+            <Desc>SAMPLE FACIAL CREAM II 1OZ</Desc>
+            <HarmCode />
+            <Item>SMPLFACIALCREAM2</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <StorageTemplate />
+            <BaseQty>980.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>980.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Lot>12345</Lot>
+            <Quantity>980.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>1088.00000</TotalVolume>
+          <TotalWeight>68.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T13:37:00.233</AgingDate>
+          <AllocatedQty>0.00000</AllocatedQty>
+          <ExpirationDate>2010-01-01T00:00:00</ExpirationDate>
+          <InternalID>110</InternalID>
+          <InTransitQty>0.00000</InTransitQty>
+          <Permanent>N</Permanent>
+          <ReceivedDate>2008-03-05T13:37:00.233</ReceivedDate>
+          <SKU>
+            <Color>OTC</Color>
+            <Company>ALLERGAN</Company>
+            <Desc>SAMPLE FACIAL CREAM II 1OZ</Desc>
+            <HarmCode />
+            <Item>SMPLFACIALCREAM2</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <Size>ACTIVE</Size>
+            <StorageTemplate />
+            <BaseQty>144.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>144.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Lot>200</Lot>
+            <Quantity>144.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>0.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>1152.00000</TotalVolume>
+          <TotalWeight>72.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+        <Inventory>
+          <DateTimeStamp>2008-03-12T07:58:58.753</DateTimeStamp>
+          <ProcessStamp>cb395a02-8f37-4b1c-a0a5-2214247af918</ProcessStamp>
+          <UserStamp>jelliott</UserStamp>
+          <AgingDate>2008-03-05T05:33:17.42</AgingDate>
+          <AllocatedQty>113.00000</AllocatedQty>
+          <ExpirationDate>4712-12-31T00:00:00</ExpirationDate>
+          <InternalID>12</InternalID>
+          <InTransitQty>96.00000</InTransitQty>
+          <Permanent>Y</Permanent>
+          <ReceivedDate>2008-03-05T05:33:17.42</ReceivedDate>
+          <SKU>
+            <Company>ALLERGAN</Company>
+            <Desc>SAMPLE GLYCARE I 2 FL OZ</Desc>
+            <HarmCode />
+            <Item>SMPLGLYCAREI</Item>
+            <ItemCategories />
+            <ItemClass>
+              <StorageTemplate />
+            </ItemClass>
+            <ItemTemplate />
+            <Nmfc />
+            <StorageTemplate />
+            <BaseQty>1000.00000</BaseQty>
+            <BaseQtyUm>EA</BaseQtyUm>
+            <ConvertedQty>1000.00000</ConvertedQty>
+            <ConvertedQtyUm>EA</ConvertedQtyUm>
+            <Lot>9999</Lot>
+            <Quantity>1000.00000</Quantity>
+            <QuantityUm>EA</QuantityUm>
+            <TotalListPrice>0</TotalListPrice>
+            <TotalValue>0</TotalValue>
+            <TotalVolume>0.00000</TotalVolume>
+            <TotalWeight>0</TotalWeight>
+            <Volume>0</Volume>
+          </SKU>
+          <Status>Available</Status>
+          <SuspenseQty>44.00000</SuspenseQty>
+          <TotalCost>0.00000</TotalCost>
+          <TotalValue>0.00000</TotalValue>
+          <TotalVolume>368.00000</TotalVolume>
+          <TotalWeight>23.00000</TotalWeight>
+          <Warehouse>CHERRY1</Warehouse>
+        </Inventory>
+      </Inventories>
+    </WMFWUpload>
+  </WMWDATA>
+</WMWROOT>

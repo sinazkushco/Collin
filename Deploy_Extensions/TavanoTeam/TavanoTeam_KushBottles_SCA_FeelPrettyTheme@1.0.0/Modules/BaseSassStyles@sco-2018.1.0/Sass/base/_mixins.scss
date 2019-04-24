@@ -1,0 +1,332 @@
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+%scroll-y{
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+// avoid using BS mixin cause wont generate "-webkit-transform"
+@mixin transition-transform($duration...) {
+	-webkit-transition: -webkit-transform $duration;
+	-moz-transition: -moz-transform $duration;
+	-o-transition: -o-transform $duration;
+	transition: transform $duration;
+}
+
+@mixin appearance($appearance) {
+	-webkit-appearance: $appearance;
+	-moz-appearance: $appearance;
+	appearance: $appearance;
+}
+
+//used for select arrow down
+@mixin angle-down-background($color){
+	$color-local: remove-hash-from-color($color);
+	background-image:url("data:image/svg+xml;utf8,<svg width='2000px' height='2000px' fill='%23#{$color-local}' xmlns='http://www.w3.org/2000/svg'><path d='M1075 352q0 -13 -10 -23l-50 -50q-10 -10 -23 -10t-23 10l-393 393l-393 -393q-10 -10 -23 -10t-23 10l-50 50q-10 10 -10 23t10 23l466 466q10 10 23 10t23 -10l466 -466q10 -10 10 -23z'/></svg>");
+}
+
+
+@function remove-hash-from-color($color) {
+	@return str-slice(ie-hex-str($color), 4);
+}
+
+//All placeholders equal
+@mixin placeholder {
+	&::-webkit-input-placeholder {@content}
+	&:-moz-placeholder           {@content}
+	&::-moz-placeholder          {@content}
+	&:-ms-input-placeholder      {@content}
+}
+
+
+// Header Top - Links
+@mixin header-top-links {
+  font-size: $theme-xs-font-size;
+  font-weight: $theme-font-weight-normal !important;
+  color: $theme-header-ft-color-secondary;
+  line-height: normal;
+  height: auto;
+  text-transform: uppercase;
+  padding: 0px $sc-padding-base * 2;
+  display: inline-block !important;
+  font-family: $font-family-primary;
+}
+
+@mixin banner-font-shadow {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8), 0 0 1px #fff;
+}
+
+// Selection
+@mixin selection($color, $background) {
+  $prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
+  @each $prefix in $prefixes {
+    &::#{$prefix}selection {
+      color: $color;
+      background: $background;
+    }
+  }
+}
+
+// Buttons
+@mixin btn ($btn-color) {
+  text-transform: uppercase;
+  @include transition-duration(.2s);
+  @include transition-timing-function(ease);
+  border: 1px solid $btn-color;
+  background: $btn-color;
+  color: $theme-tertiary-color;
+  font-size: $theme-sm-font-size;
+  font-family: $font-family-primary;
+  &:hover,
+  &:active,
+  &:focus {
+    background: transparent;
+    color: $btn-color;
+  }
+  &:disabled {
+    color: $theme-tertiary-color;
+    background-color: $btn-color;
+    opacity: 0.4;
+    border: none;
+  }
+}
+
+// Buttons : Lineal buttons, solid on hover
+@mixin lineal-btn ($btn-color) {
+	text-transform: uppercase;
+  @include transition-duration(.2s);
+	@include transition-timing-function(ease);
+  background: transparent;
+  color: $btn-color;
+  border: 1px solid $btn-color;
+  font-size: $theme-sm-font-size;
+  font-family:$font-family-primary;
+	&:hover, &:active, &:focus {
+		background: $btn-color;
+    color: #FFF;
+	}
+	&:disabled {
+    background: transparent;
+    color: $btn-color;
+    border: 1px solid $btn-color;
+		opacity: 0.4;
+	}
+}
+
+//3D Buttons
+@mixin btn-3d ($padding-btn) {
+  background-color: $sc-color-primary;
+  cursor: pointer;
+  padding: ($padding-btn);
+  display: inline-block;
+  outline: 0;
+  box-shadow: 0 6px $sc-color-primary-dark;
+  border: none;
+  color: $theme-accent-color;
+  position: relative;
+  font-size: 20px;
+  font-weight: $sc-font-weight-semibold;
+  border-radius: 0 0 $border-radius-large $border-radius-large;
+  text-transform: uppercase;
+  &:active,
+  &:hover {
+    top: 6px;
+    box-shadow: 0 0 $sc-color-primary-dark;
+  }
+}
+
+//Parallax
+@mixin parallax-back ($parallax-type) {
+  $prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
+  @each $prefix in $prefixes {
+    #{$prefix}background-size: $parallax-type;
+  }
+}
+
+
+// Header SCA Nav. Links
+@mixin sca-links {
+  font-family: $font-family-primary;
+  font-size: 11px;
+  height: 32px;
+  line-height: 32px;
+  color: white;
+  text-transform: uppercase;
+	transition: all 0.25s;
+	font-weight: 400;
+	span{
+		color: white;
+	}
+	&:hover{
+		color: $theme-primary-color;
+		span{
+			color: $theme-primary-color;
+		}
+	}
+}
+
+// B2C Primary Button
+@mixin btn-primary ($btn-main-color, $btn-secondary-color) {
+  font-family: $font-family-primary;
+  font-size: $theme-md-font-size;
+  color: $btn-main-color;
+  text-transform: uppercase;
+  text-align: center;
+  background: transparent;
+  border: 2px solid $btn-main-color;
+  padding: 15px 25px;
+  display: inline-block;
+  @include transition-duration(.2s);
+  @include transition-timing-function(ease);
+  &:hover,
+  &:active,
+  &:focus {
+    background: $btn-main-color;
+    color: $btn-secondary-color;
+  }
+  &:disabled {
+    color: $btn-main-color;
+    background-color: transparent;
+    opacity: 0.5;
+    border: 2px solid $btn-main-color;
+    &:hover,
+    &:active,
+    &:focus { color: $btn-main-color; }
+  }
+}
+
+//TT new styles
+
+
+
+@mixin banner-font-shadow{
+text-shadow: 0 1px 3px rgba(0,0,0,0.8), 0 0 1px #fff;
+}
+
+// Selection
+@mixin selection($color, $background) {
+   $prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
+   @each $prefix in $prefixes {
+      &::#{$prefix}selection {
+        color: $color;
+        background: $background;
+      }
+   }
+}
+
+// Buttons
+@mixin btn ($btn-color) {
+	text-transform: uppercase;
+  @include transition-duration(.2s);
+	@include transition-timing-function(ease);
+	border: 1px solid $btn-color;
+  background: $btn-color;
+	color: #FFFFFF;
+  font-size: $theme-sm-font-size;
+  font-family:$font-family-primary;
+	&:hover, &:active, &:focus {
+		background: transparent;
+		color: $btn-color;
+	}
+	&:disabled {
+		color: #FFFFFF;
+		background-color: $btn-color;
+		opacity: 0.4;
+		border: none;
+	}
+}
+
+// Buttons : Lineal buttons, solid on hover
+@mixin lineal-btn ($btn-color) {
+	text-transform: uppercase;
+  @include transition-duration(.2s);
+	@include transition-timing-function(ease);
+  background: transparent;
+  color: $btn-color;
+  border: 1px solid $btn-color;
+  font-size: $theme-sm-font-size;
+  font-family:$font-family-primary;
+	&:hover, &:active, &:focus {
+		background: $btn-color;
+    color: #FFF;
+	}
+	&:disabled {
+    background: transparent;
+    color: $btn-color;
+    border: 1px solid $btn-color;
+		opacity: 0.4;
+	}
+}
+
+//3D Buttons
+@mixin btn-3d ($padding-btn){
+    background-color:$sc-color-primary;
+    cursor: pointer;
+    padding:($padding-btn);
+    display: inline-block;
+    outline: 0;
+    box-shadow: 0 6px $sc-color-primary-dark;
+    border: none;
+    color:$theme-accent-color;
+    position: relative;
+    font-size: 20px;
+    font-weight: $sc-font-weight-semibold;
+    border-radius: 0 0 $border-radius-large $border-radius-large;
+    text-transform: uppercase;
+    &:active, &:hover{
+		top: 6px;
+	    box-shadow: 0 0 $sc-color-primary-dark;
+    }
+}
+
+// Border Radius
+@mixin roundBorder ($border-radius){
+  border-radius:$border-radius;
+  -webkit-border-radius:$border-radius;
+  -o-border-radius:$border-radius;
+  -ms-border-radius:$border-radius;
+}
+
+//Parallax
+@mixin parallax-back ($parallax-type){
+   $prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
+   @each $prefix in $prefixes {
+   	 #{$prefix}background-size: $parallax-type;
+   }
+}
+
+
+//custom buttons
+@mixin btn-custom-1 ($btn-main-color, $btn-secondary-color) {
+  font-family: $font-family-primary;
+  font-size: $theme-md-font-size;
+  color: $btn-main-color;
+  text-transform: uppercase;
+  text-align: center;
+  background: black;
+  border: 1px solid $theme-primary-color;
+  padding: 15px 25px;
+  display: inline-block;
+  @include transition-duration(.2s);
+  @include transition-timing-function(ease);
+  &:hover,
+  &:active,
+  &:focus {
+    background: $btn-main-color;
+    color: $btn-secondary-color;
+  }
+  &:disabled {
+    color: $btn-main-color;
+    background-color: transparent;
+    opacity: 0.5;
+    border: 2px solid $btn-main-color;
+    &:hover,
+    &:active,
+    &:focus { color: $btn-main-color; }
+  }
+}

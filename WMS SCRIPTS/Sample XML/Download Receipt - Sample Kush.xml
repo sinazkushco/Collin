@@ -1,0 +1,32 @@
+<Receipts>
+  <Receipt>
+    <Action>Save</Action>
+    <ClosedDate>Today's Date if trying to Close the PO (2018-11-14T00:00:00.000)</ClosedDate>
+    <Company>Subsidiary</Company>
+    <ErpOrderNum>Internal ID</ErpOrderNum>
+    <ReceiptDate>Receive By (2018-11-14T00:00:00.000)</ReceiptDate>
+    <ReceiptId>PO Number</ReceiptId>
+    <ReceiptIdType>Type</ReceiptIdType>
+    <Vendor>
+      <Action>SAVE</Action>
+      <Source>Vendor</Source>
+      <SourceAddress>
+        <Action>SAVE</Action>
+        <Name>Vendor</Name>
+      </SourceAddress>
+    </Vendor>
+    <Warehouse>Location</Warehouse>
+    <Details>
+      <ReceiptDetail>
+        <Action>SAVE</Action>
+        <ErpOrderLineNum>Line Unique ID</ErpOrderLineNum>
+        <SKU>
+          <Action>SAVE</Action>
+          <Company>Subsidiary</Company>
+          <Item>SKU</Item>
+          <Quantity>Quantity</Quantity>
+        </SKU>
+      </ReceiptDetail>
+    </Details>
+  </Receipt>
+</Receipts>

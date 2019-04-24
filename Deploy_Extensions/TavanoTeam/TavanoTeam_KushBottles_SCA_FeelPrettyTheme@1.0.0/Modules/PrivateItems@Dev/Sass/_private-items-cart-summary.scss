@@ -1,0 +1,57 @@
+.private-items-cart-header {
+  h2 {
+    font-weight: 900;
+    font-size: 20px;
+  }
+}
+.private-items-cart-note {
+  color:#da5671;
+  margin-bottom: 35px;
+}
+
+.private-items-cart-sentence {
+  margin: 5px 0 15px 0;
+}
+
+.private-items-cart-ship-info-label {
+  text-transform: uppercase;
+  color: #808080;
+  font-weight: 500;
+}
+
+.private-items-cart-ship-info {
+  display: flex;
+  width: 100%;
+}
+
+// .private-items-cart-ship-info-details {
+//   width: 50%;
+// }
+
+.private-items-cart-review {
+  text-align: center;
+  margin-top: 25px;
+}
+.private-items-cart-submit {
+  background-color: $kush-primary-color;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.36px;
+  width: 100%;
+  height: 35px;
+}
+
+.private-items-cart-error {
+    margin-top: $sc-margin-lv3;
+    font-weight: $sc-font-weight-semibold;
+    color: $sc-color-error;
+}
+
+.private-items-cart-ship-info-address {
+  .address-details {
+    border: none;
+    padding: 0;
+  }
+}

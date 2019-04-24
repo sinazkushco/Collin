@@ -1,0 +1,252 @@
+/**
+ * The purpose of this script is to update the field "Classes Sold" whenever the following records are saved:
+ *      Invoice (invoice)
+ *      Sales Receipt (cashsale)
+ *      Sales Order (salesorder)
+ *
+ *  For Sales Orders, this is a Record Level Client Script with the entry point, saveRecord_updateClasses
+ *  For Invoices and Sales Receipts, this is a Form Level Client Script with the entry point, saveRecord_entry which calls saveRecord_updateClasses()
+ *  Both entry points eventually call the model, updateClasses.
+ *      This file is required to be added as a library.
+ * */
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////entry points in-use/////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+/** fires when the submit button is pressed, but prior to form being submitted*/
+function saveRecord_updateClasses(){
+    log('Save Record entry point triggered in the Controller');
+
+    var lookup = {};
+    lookup['invoice'] = findClassID;
+    lookup['cashsale'] = getClassID;
+    lookup['salesorder'] = getClassID;
+
+    var lookupFunction = lookup[ nlapiGetRecordType() ];
+
+    if (lookupFunction !== undefined){
+        try {
+            var numberOfUniqueClasses = getNumberOfClasses( lookupFunction );
+            log('AUDIT', numberOfUniqueClasses +" classes found");
+            setUniqueClassesSold(numberOfUniqueClasses);
+        } catch (e){
+            log('ERROR','record type not supported');
+        }
+    }
+
+    return true;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////model containing logic//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * The purpose of this script is to update the field "Classes Sold" whenever the following records are saved:
+ *      Invoice (invoice)
+ *      Sales Receipt (cashsale)
+ *      Sales Order (salesorder)
+ *
+ *  For Sales Orders, this is a Record Level Client Script with the entry point, saveRecord_updateClasses
+ *  For Invoices and Sales Receipts, this is a Form Level Client Script with the entry point, saveRecord_entry which calls saveRecord_updateClasses()
+ *  Both entry points eventually call the model, updateClasses.
+ *      This file is required to be added as a library.
+ * */
+
+/** Returns the total number of (unique) Classes purchased on the sales order
+ * @param   lookupFunction  The function to use to get the ClassID, findClassID || getClassID
+ * @return  Number          How many unique classes are present in the 'item' sublist
+ */
+function getNumberOfClasses(lookupFunction){
+    var lineCount = nlapiGetLineItemCount('item');
+    var classes = {};
+
+    for (var line = 1; line <= lineCount; line++){
+        var classID = lookupFunction(line); //returns classID or ''
+        if (classID) {
+            classes[classID] = classes[classID]+1 || 1;
+            // code to count how many of each class is in this sales order is already in place, as the values of each key.
+        }
+    }
+    return Object.keys(classes).length;
+}
+
+/** Used for Invoice records.  Gets the item's class from the class field on the line item.
+ * If the class field is empty, function attempts to lookup the class from the item itself, then populate the field.
+ * @param   line    Line number from the 'item' sublist
+ * @return  string  The classID if it exists, or an empty string.
+ */
+function findClassID(line){
+    var classID = nlapiGetLineItemValue('item', 'custcol_item_class', line);
+    if (classID === '') {
+        // log( line +": ClassID not found, attempting to find it from the item");
+        classID = getClassID(line); //returns classID or ''
+        if (classID){
+            nlapiSelectLineItem('item', line);
+            nlapiSetCurrentLineItemValue('item', 'custcol_item_class', classID);
+            nlapiCommitLineItem('item');
+            nlapiCancelLineItem('item'); //after commiting an item, NetSuite sometimes creates a new line item, selects it, and the displays a modal if the user clicks anywhere else.  this surpresses it.
+        } else {
+            // log('AUDIT','Class ID not found');
+            return '';
+        }
+        // log("Found: "+ classID);
+    }
+    return classID || '';
+}
+
+/** Used by invoice and receipt records.  Returns the ClassID associated with an item in a sublist.
+ * @param   line    Line number from the 'item' sublist
+ * @return  string  Either a string representing the classID or empty string if the item has no class
+ */
+function getClassID(line){
+    var itemID = nlapiGetLineItemValue('item','item',line);
+
+    try {
+        var classID = nlapiLookupField('item',itemID,'class');
+    } catch (e){
+        log('ERROR','could not lookup class field for '+ itemID);
+        return '';
+    }
+
+    return classID || '';
+}
+/** Sets the '# of classes sold' field
+ * @param   amount    The value to set
+ */
+function setUniqueClassesSold(amount){
+    if (amount){
+        var previous = nlapiGetFieldValue('custbody_item_classes_sold');
+        nlapiSetFieldValue('custbody_item_classes_sold', amount);
+        log('custbody_item_classes_sold updated from '+ previous +' to: '+ amount);
+    } else {
+        nlapiSetFieldValue('custbody_item_classes_sold', '0');
+        log('AUDIT','No classes associated to any line items in the list');
+    }
+}
+
+/**  Either console.logs or nlapiLogExecution depending on if script is executed server side or client side.
+ * @param message   the message to log.  if undefined, the type param is the message.
+ * @param type      required for server side nlapiLogExecution
+ */
+function log (type, message) {
+    var context = nlapiGetContext().getExecutionContext();
+    if (context === 'userinterface'){
+        try {
+            if (message === undefined){
+                console.log(type);
+            } else if (type === 'AUDIT') {
+                console.warn(message);
+            } else if (type === 'ERROR'){
+                console.error(message);
+            } else if (type === 'SYSTEM'){
+                console.error(message);
+            } else {
+                console.log(message); //shouldnt ever go here
+            }
+        } catch (error){
+            //no console
+            nlapiLogExecution('ERROR','ERROR THROWN ON '+context, error);
+        }
+    } else {
+        if (message === undefined) {
+            nlapiLogExecution('DEBUG',context,type);
+        } else if (type === 'AUDIT') {
+            nlapiLogExecution('AUDIT',context,message);
+        } else if (type === 'ERROR'){
+            nlapiLogExecution('ERROR',context,message);
+        } else if (type === 'SYSTEM'){
+            nlapiLogExecution('SYSTEM',context,message);
+        } else {
+            nlapiLogExecution('DEBUG',context,message); //shouldnt ever go here
+        }
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////unused entry points/////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+/** fires when page completes loading or form is reset
+ * @param type  string  {create copy edit}
+ * essentially, js.onLoad */
+function pageInit_updateClasses(type){
+
+}
+
+// save record goes here.  but is currently being used.
+
+/** fires before a field is about to be changed by the user or client calls, including beforeLoad events
+ * DOES NOT APPLY TO DROPDOWN SELECT OR CHECKBOX FIELDS
+ * essentially, js.onBlur
+ * @param type      string          the sublist internal ID
+ * @param name      string          the field internal ID
+ * @param linenum   {string|null}   if sublist: line number starting at index 1, not 0.  if body field, pass in null
+ * */
+function validateField_updateClasses(type, name, linenum){
+
+    return true;
+}
+
+/** fires when a field is changed by the user or client calls, including beforeLoad events
+ * essentially, js.onChange
+ * @param type      string          the sublist internal ID
+ * @param name      string          the field internal ID
+ * @param linenum   {string|null}   if sublist: line number starting at index 1, not 0.  if body field, pass in null
+ * */
+function fieldChanged_updateClasses(type, name, linenum){
+
+}
+
+/** fires after a field has changed and all child (dependent) field values are sourced from the server
+ * essentially, fieldChanged but after dependent values have been set
+ * @param type      string          the sublist internal ID
+ * @param name      string          the field internal ID
+ * */
+function postSourcing_updateClasses(type, name){
+
+}
+
+/** fires when an existing line is selected
+ * essentially, pageInit for sublist line items
+ * @param type      string          the sublist internal ID
+ */
+function lineInit_updateClasses(type){
+
+}
+
+/** fires before a line is being added to a sublist
+ * essentially, saveRecord for sublist line items
+ * @param type      string          the sublist internal ID
+ */
+function validateLine_updateClasses(type){
+
+    return true;
+}
+
+/** fires after a sublist change, but only if it causes the total to change
+ * should not be used for manipulating the current line item value. getCurrentLineItem does not work
+ * @param type      string          the sublist internal ID
+ */
+function recalc_updateClasses(type){
+
+}
+
+/** fires when you insert a line into an edit sublist
+ * @param type      string          the sublist internal ID
+ * return false to prevent submission
+ */
+function validateInsert_updateClasses(type){
+
+    return true;
+}
+
+/** fires when you try to remove an existing line item from an edit sublist
+ * @param type      string          the sublist internal ID
+ * return false to prevent submission
+ */
+function validateDelete_updateClasses(type){
+
+    return true;
+}

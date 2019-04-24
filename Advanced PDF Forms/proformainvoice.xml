@@ -1,0 +1,270 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+  <head>
+    <#if .locale == "ru_RU">
+      <link name="verdana" type="font" subtype="opentype" src="${nsfont.verdana}" src-bold="${nsfont.verdana_bold}" bytes="2" />
+      </#if>
+    <macrolist>
+      <macro id="nlheader">
+        <table style="width: 100%; font-size: 9pt;">
+          <tr>
+            <td rowspan="4" style="padding: 0px 0px 0px 5px;">
+              <img src="${companyInformation.logo?html}" style="float: left; margin: 7px 0px;width:150px;height:42px;display:block" />
+              ${companyInformation.name}<br />
+              <#if record.location.address1?length gt 1>${record.location.address1}<br /></#if>
+              <#if record.location.address2?length gt 1>${record.location.address2}<br/></#if>
+              <#assign citystatezip = "${record.location.city} ${record.location.state} ${record.location.zip}<br />">
+              <#if citystatezip?length gt 11>${citystatezip}</#if>
+              <#if record.location.country == 'US'>United States</#if>
+              
+            </td>
+            <td align="right" style="padding: 0;"><span style="font-size: 18pt;">Pro Forma Invoice</span></td>
+          </tr>
+          <tr><td align="right" style="padding: 0;"><span style="font-size: 12pt;">Customer: <b>${record.entity}</b></span></td></tr>
+          <tr><td align="right" style="padding: 0;"><span>Date: ${record.trandate}</span></td></tr>
+        </table>
+      </macro>
+      <macro id="nlfooter">
+        <table style="width: 100%; font-size: 8pt;">
+          <tr>
+            <td colspan="9" align="left" id="silicone_warning"  style="color:red; padding: 5px 25px 15px 12px;">
+              <#assign css_table = "" />
+              <#list record.item as item>
+                <#if item.custcol_item_class?contains("Silicone")>
+                  <#assign css_table = "Warning: Silicone and butane are considered incompatible.  Using silicone containers to store products derived through butane-based extraction processes is not recommended." />
+                  </#if>
+                </#list>
+              ${css_table}
+            </td>
+          </tr>
+          <tr>
+            <td  colspan="2" style="padding: 0;"><barcode codetype="code128" showtext="true" value="${record.tranid}"/></td>
+            <td colspan="6" style="vertical-align:bottom;margin-top: 5px;"><b>Signature:</b> <span style="color:#d4d4d4;">_____________________________________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Date:</b><span style="color:#d4d4d4;">________________</span></td>
+            <td colspan="1" align="right" style="padding: 0;"><pagenumber/> of <totalpages/></td>
+          </tr>
+          <tr><td colspan="2"></td><td colspan="5" style="margin-left: 25px; margin-top: 20px;">Please visit www.kushbottles.com/returns for our return policy.</td></tr>
+        </table>
+      </macro>
+    </macrolist>
+    <style type="text/css">
+      table {
+        <#if .locale == "zh_CN">
+        font-family: stsong, sans-serif;
+        <#elseif .locale == "zh_TW">
+        font-family: msung, sans-serif;
+        <#elseif .locale == "ja_JP">
+        font-family: heiseimin, sans-serif;
+        <#elseif .locale == "ko_KR">
+        font-family: hygothic, sans-serif;
+        <#elseif .locale == "ru_RU">
+        font-family: verdana;
+        <#else>
+        font-family: sans-serif;
+      </#if>
+        font-size: 9pt;
+        table-layout: fixed;
+      }
+      th {
+        font-weight: bold;
+        font-size: 8pt;
+        vertical-align: middle;
+        padding: 5px 6px 3px;
+        background-color: #e3e3e3;
+        color: #333333;
+      }
+      td {
+        padding: 4px 6px;
+      }
+      b {
+        font-weight: bold;
+        color: #333333;
+      }
+      table.header td {
+        padding: 0px;
+        font-size: 9pt;
+      }
+      table.footer td {
+        padding: 0px;
+        font-size: 8pt;
+      }
+      table.itemtable th {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+      table.body td {
+        padding-top: 2px;
+      }
+      table.total {
+        page-break-inside: avoid;
+      }
+      tr.totalrow {
+        background-color: #e3e3e3;
+        line-height: 200%;
+      }
+      td.totalboxtop {
+        font-size: 12pt;
+        background-color: #e3e3e3;
+      }
+      td.addressheader {
+        font-size: 8pt;
+        padding-top: 6px;
+        padding-bottom: 2px;
+      }
+      td.address {
+        padding-top: 0px;
+      }
+      td.totalboxmid {
+        font-size: 20pt;
+        padding-top: 10px;
+        background-color: #e3e3e3;
+      }
+      td.totalboxbot {
+        background-color: #e3e3e3;
+        font-weight: bold;
+      }
+      span.title {
+        font-size: 18pt;
+      }
+      span.number {
+        font-size: 16pt;
+      }
+      span.itemname {
+        font-weight: bold;
+        line-height: 150%;
+      }
+      hr {
+        width: 100%;
+        color: #d3d3d3;
+        background-color: #d3d3d3;
+        height: 1px;
+      }
+    </style>
+  </head>
+  <body header="nlheader" header-height="100pt" footer="nlfooter" footer-height="55pt" padding="0.5in 0.5in 0.5in 0.5in" size="Letter">
+    <table style="width: 100%; margin-top: 10px;">
+      <tr>
+        <td class="addressheader" colspan="3"><b>${record.billaddress@label}</b></td>
+        <td class="addressheader" colspan="3"><b>${record.shipaddress@label}</b></td>
+        <td class="totalboxtop" colspan="5"><b>${record.total@label?upper_case}</b></td>
+      </tr>
+      <tr>
+        <td class="address" colspan="3" rowspan="2">${record.billaddress}</td>
+        <td class="address" colspan="3" rowspan="2">${record.shipaddress}</td>
+        <td align="right" class="totalboxmid" colspan="5">${record.total}</td>
+      </tr>
+    </table>
+    <table style="width: 100%; margin-top: 10px;">
+      <tr>
+        <th>Sales Order Ref#</th>
+        <#if record.otherrefnum?has_content><th>${record.otherrefnum@label}</th></#if>
+        <th>${record.custbody1@label}</th>
+        <th>${record.shipmethod@label}</th>
+        <th>${record.shipdate@label}</th>
+      </tr>
+      <tr>
+        <td style="padding-top: 2px;">#${record.tranid}</td>
+        <#if record.otherrefnum?has_content><td style="padding-top: 2px;">${record.otherrefnum}</td></#if>
+        <td style="padding-top: 2px;">${record.custbody1}</td>
+        <td style="padding-top: 2px;">${record.shipmethod}</td>
+        <td style="padding-top: 2px;">${record.shipdate}</td>
+      </tr>
+    </table>
+    <#if record.item?has_content>
+      <!-- begin Payment Remittance -->
+      <table class="body payments" style="width: 100%; margin-top: 8px; margin-bottom: 8px;">
+        <tr>
+          <th align="center" colspan="2" style="text-decoration: underline; padding-bottom: 0px">Payment Remittance</th>
+        </tr>
+        <tr>
+          <th>Checks</th>
+          <th>ACH/Wire Transfers</th>
+        </tr>
+        <tr>
+          <td>
+            Payable to:<br />
+            <strong>Kim International Corporation</strong><br />
+            Mail To:<br />
+            <strong>Dept LA 23248</strong><br />
+            <strong>Pasadena CA 91185-3248</strong><br />
+          </td>
+          <td>
+            <span>Bank Name:</span> <strong>HSBC Bank USA</strong><br />
+            <span>Account Name:</span> <strong>Kim International Corporation</strong><br />
+            <span>ABA#</span> <span><strong>021001088</strong></span><br />
+            <span>Swift#</span> <strong>MRMDUS33</strong><br />
+            <span>Acct#</span> <strong>738059889</strong>
+          </td>
+        </tr>
+      </table>
+      <!-- end Payment Remittance -->
+
+      <table style="width: 100%; margin-top: 10px;"><!-- start items --><#list record.item as item>
+        <#if item_index==0>
+          <thead>
+            <tr>
+              <th align="center" colspan="3" style="padding: 10px 6px;">${item.quantity@label}</th>
+              <th colspan="12" style="padding: 10px 6px;">${item.item@label}</th>
+              <th align="right" colspan="4" style="padding: 10px 6px;">${item.rate@label}</th>
+              <th align="right" colspan="4" style="padding: 10px 6px;">${item.amount@label}</th>
+            </tr>
+          </thead>
+          </#if>
+        <tr>
+          <td align="center" colspan="3" line-height="150%">${item.quantity}</td>
+          <td colspan="12"><span style="font-weight: bold; line-height: 150%; color: #333333;">${item.description}</span><br />${item.custcol_item_sku}</td>
+          <td align="right" colspan="4">${item.rate?string["0.00##"]}</td>
+          <td align="right" colspan="4">${item.amount}</td>
+        </tr>
+        </#list><!-- end items --></table>
+
+      <hr style="width: 100%; color: #d3d3d3; background-color: #d3d3d3; height: 1px;" />
+      </#if>
+    <table style="page-break-inside: avoid; width: 100%; margin-top: 10px;">
+      <tr>
+        <td colspan="4">&nbsp;</td>
+        <td align="right" style="font-weight: bold; color: #333333;">${record.subtotal@label}</td>
+        <td align="right">${record.subtotal}</td>
+      </tr>
+      <tr>
+        <td colspan="4">&nbsp;</td>
+        <td align="right" style="font-weight: bold; color: #333333;">${record.shippingcost@label}</td>
+        <td align="right">${record.shippingcost}</td>
+      </tr>
+      <#if record.discounttotal != 0.00>
+        <tr>
+          <td colspan="4">&nbsp;</td>
+          <td align="right" style="font-weight: bold; color: #333333;">Discount</td>
+          <td align="right">${record.discounttotal}</td>
+        </tr>
+        </#if>
+      <tr>
+        <td colspan="4">&nbsp;</td>
+        <td align="right" style="font-weight: bold; color: #333333;">${record.taxtotal@label} (${record.taxrate}%)</td>
+        <td align="right">${record.taxtotal}</td>
+      </tr>
+      <#if record.custbody_deposit_amount gt 0>
+        <tr>
+          <td background-color="#ffffff" colspan="4">&nbsp;</td>
+          <td align="right" style="font-weight: bold; color: #333333;"><b>${record.total@label}</b></td>
+          <td align="right">${record.total}</td>
+        </tr>
+        <tr>
+          <td colspan="4">&nbsp;</td>
+          <td align="right" style="font-weight: bold; color: #333333;">Deposits Paid</td>
+          <td align="right">${record.custbody_deposit_amount}</td>
+        </tr>
+        <tr class="totalrow">
+          <td colspan="4">&nbsp;</td>
+          <td align="right" style="font-weight: bold; color: #333333;">Balance Due</td>
+          <td align="right"><b>${(record.total - record.custbody_deposit_amount)?string.currency}</b></td>
+        </tr>
+      <#else>
+        <tr class="totalrow">
+          <td colspan="4">&nbsp;</td>
+          <td align="right" style="font-weight: bold; color: #333333;"><b>${record.total@label}</b></td>
+          <td align="right"><b>${record.total}</b></td>
+        </tr>
+      </#if>
+    </table>
+  </body>
+</pdf>

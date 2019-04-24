@@ -1,0 +1,47 @@
+section#theme-terms{
+  margin: $sc-padding-lv1 * 4 0 $sc-padding-lv1 * 8 0;
+	p, strong, ul {
+		color:$theme-primary-ft-color;
+	}
+  div.top-text-section {
+    border-bottom: 1px solid $theme-neutral-color;
+    padding: $sc-padding-lv1 * 5 0;
+    line-height: 32px;
+    strong {
+  		margin-bottom:12px;
+  	}
+    @media (max-width: $screen-md-min) {
+		    line-height: 21px;
+  	}
+	}
+  // Terms & Conditions title
+	h1 {
+    //color: $sc-color-primary;
+    border-bottom: 1px solid $theme-neutral-color;
+    margin-top: $sc-padding-lv1 * 3 0 $sc-padding-lv1 * 4 0;
+    padding-bottom: $sc-padding-lv1 * 2;
+	}
+	h3 {
+    margin-top: $sc-padding-lv1 * 6;
+    font-size: $theme-normal-font-size;
+    text-decoration: underline;
+    text-transform: uppercase;
+    //color: $sc-color-primary;
+    font-weight: $sc-font-weight-semibold;
+    margin-bottom: $sc-padding-lv1 * 2;
+    @media (max-width: $screen-md-min) { font-size:$sc-font-size-base; }
+	}
+	ul {
+		li {
+	    list-style: none;
+	    list-style-type: initial;
+	    margin-left: $sc-padding-lv1 * 3;
+	    line-height: 26px;
+	   }
+	}
+	@media (min-width: $screen-md-min) {
+		div.row {
+			margin-bottom: $sc-padding-lv1 * 7;
+		}
+	}
+}

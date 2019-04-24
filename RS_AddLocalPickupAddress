@@ -1,0 +1,127 @@
+function RS_AddLocalPickupAddress(type,name)
+{
+    //Find value of Location field on form
+    // previously used field 'location' -- changed by request of LJ to 'shipmethod' field
+    // var location= nlapiGetFieldValue('location');
+    var location = nlapiGetFieldValue('shipmethod');
+
+    //flag used in set_entityuse_code.js
+    //we need this to determine tax exemption for the customer if they choose willcall.
+    //since that changes the ship address
+    window.check_custom_address = true;
+
+
+    nlapiSetFieldValue('inpt_shipaddresslist', '');
+    nlapiSetFieldValue('indx_shipaddresslist9', 0);
+
+    //California - (Santa Ana)
+    if (location == 42){
+        nlapiSetFieldValue('shipaddress', 'Will Call\n1800 Newport Circle\nSanta Ana, CA 92705\nUnited States');
+        nlapiSetFieldValue('shipaddressee', 'Will Call');
+        nlapiSetFieldValue('shipaddr1', '1800 Newport Circle');
+        nlapiSetFieldValue('shipcity', 'Santa Ana');
+        nlapiSetFieldValue('shipstate', 'CA');
+        nlapiSetFieldValue('shipzip', '92705');
+        nlapiSetFieldValue('shipcountry', 'US');
+
+        // nlapiSetFieldValue('inpt_shipmethod', 'Local Pickup (Santa Ana, CA)');
+        // nlapiSetFieldValue('location', 1);
+
+    }
+
+    //Washington
+    else if (location == 4365){
+        nlapiSetFieldValue('shipaddress', 'Will Call\n19510 144th Ave NE\nSuite A1\nWoodinville, WA 98072\nUnited States');
+        nlapiSetFieldValue('shipaddressee', 'Will Call');
+        nlapiSetFieldValue('shipaddr1', '19510 144th Ave NE');
+        nlapiSetFieldValue('shipaddr2', 'Suite A1');
+        nlapiSetFieldValue('shipcity', 'Woodinville');
+        nlapiSetFieldValue('shipstate', 'WA');
+        nlapiSetFieldValue('shipzip', '98072');
+        nlapiSetFieldValue('shipcountry', 'US');
+
+        // nlapiSetFieldValue('inpt_shipmethod', 'Local Pickup (Woodinville, WA)');
+        // nlapiSetFieldValue('location', 2);
+    }
+
+    //Colorado
+    else if (location == 4364){
+        nlapiSetFieldValue('shipaddress', 'Will Call\n4900 Osage Street\nSuite 500\nDenver, CO 80221\nUnited States');
+        nlapiSetFieldValue('shipaddressee', 'Will Call');
+        nlapiSetFieldValue('shipaddr1', '4900 Osage Street');
+        nlapiSetFieldValue('shipaddr2', 'Suite 500');
+        nlapiSetFieldValue('shipcity', 'Denver');
+        nlapiSetFieldValue('shipstate', 'CO');
+        nlapiSetFieldValue('shipzip', '80221');
+        nlapiSetFieldValue('shipcountry', 'US');
+
+        // OLD LOCATION IS LISTED BELOW:
+        // nlapiSetFieldValue('shipaddress', 'Will Call\n3831 Eudora Way\nDenver, CO 80207\nUnited States');
+        // nlapiSetFieldValue('shipaddressee', 'Will Call');
+        // nlapiSetFieldValue('shipaddr1', '3831 Eudora Way');
+        // nlapiSetFieldValue('shipcity', 'Denver');
+        // nlapiSetFieldValue('shipstate', 'CO');
+        // nlapiSetFieldValue('shipzip', '80207');
+        // nlapiSetFieldValue('shipcountry', 'US');
+
+        // nlapiSetFieldValue('inpt_shipmethod', 'Local Pickup (Denver, CO)');
+        // nlapiSetFieldValue('location', 3);
+    }
+
+    //Lawndale
+    else if (location == 6646){
+        nlapiSetFieldValue('shipaddress', 'Will Call\n15711 Condon Avenue\nSuite A5\nLawndale CA 90260\nUnited States');
+        nlapiSetFieldValue('shipaddressee', 'Will Call');
+        nlapiSetFieldValue('shipaddr1', '15711 Condon Avenue');
+        nlapiSetFieldValue('shipaddr2', 'Suite A5');
+        nlapiSetFieldValue('shipcity', 'Lawndale');
+        nlapiSetFieldValue('shipstate', 'CA');
+        nlapiSetFieldValue('shipzip', '90260');
+        nlapiSetFieldValue('shipcountry', 'US');
+
+        // nlapiSetFieldValue('inpt_shipmethod', 'Local Pickup (Lawndale, CA)');
+        // nlapiSetFieldValue('location', 5);
+    }
+    // Garden Grove
+    else if (location == 10694 || location == 14724){
+        nlapiSetFieldValue('shipaddress', 'Will Call\n11958 Monarch Street\nGarden Grove CA 92841\nUnited States');
+        nlapiSetFieldValue('shipaddressee', 'Will Call');
+        nlapiSetFieldValue('shipaddr1', '11958 Monarch Street');
+        nlapiSetFieldValue('shipcity', 'Garden Grove');
+        nlapiSetFieldValue('shipstate', 'CA');
+        nlapiSetFieldValue('shipzip', '92841');
+        nlapiSetFieldValue('shipcountry', 'US');
+
+        // nlapiSetFieldValue('inpt_shipmethod', 'Local Pickup (Garden Grove, CA)');
+        // nlapiSetFieldValue('location', 6);
+    }
+
+    // Las Vegas
+    else if (location == 14626){
+        nlapiSetFieldValue('shipaddress', 'Will Call\n6480 Cameron St\nSuite 300\nLas Vegas NV 89118\nUnited States');
+        nlapiSetFieldValue('shipaddressee', 'Will Call');
+        nlapiSetFieldValue('shipaddr1', '6480 Cameron St');
+        nlapiSetFieldValue('shipcity', 'Las Vegas');
+        nlapiSetFieldValue('shipaddr2', 'Suite 300');
+        nlapiSetFieldValue('shipstate', 'NV');
+        nlapiSetFieldValue('shipzip', '89118');
+        nlapiSetFieldValue('shipcountry', 'US');
+
+        // nlapiSetFieldValue('inpt_shipmethod', 'Local Pickup (Las Vegas, NV)');
+        // nlapiSetFieldValue('location', 49);
+    }
+
+    // Worcester
+    else if (location == 14703){
+        nlapiSetFieldValue('shipaddress', 'Will Call\n148 Blackstone River Road\nWorcester MA 01607\nUnited States');
+        nlapiSetFieldValue('shipaddressee', 'Will Call');
+        nlapiSetFieldValue('shipaddr1', '148 Blackstone River Road');
+        nlapiSetFieldValue('shipcity', 'Worcester');
+        nlapiSetFieldValue('shipstate', 'MA');
+        nlapiSetFieldValue('shipzip', '01607');
+        nlapiSetFieldValue('shipcountry', 'US');
+
+        // nlapiSetFieldValue('inpt_shipmethod', 'Local Pickup (Worcester, MA)');
+        // nlapiSetFieldValue('location', 32);
+    }
+}

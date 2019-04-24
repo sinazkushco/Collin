@@ -1,0 +1,86 @@
+.private-items-pagination {
+  // margin-right:30px;
+  margin-top: 40px;
+}
+
+.private-items-header {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.private-items-modals {
+
+}
+
+// .modal-window {
+//   visibility: hidden;
+//   position: fixed;
+//   z-index: 100000;
+//   width: auto;
+//   height: auto;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: rgba(0,0,0,0.5);
+//   // font-family:;
+//   transition: visibility .3s ease-in-out;
+// }
+
+// .modal-window.active {
+//   visibility: visible;
+//   overflow-y: auto;
+// }
+
+.private-items-modal-window-holder {
+//   height: 270px;
+//   width: 440px;
+//   background-color: #ffffff;
+//   margin: 0 auto;
+  text-align: center;
+//   position:fixed;
+//   left: 50%;
+//   top: 50%;
+//   -ms-transform: translate(-50%,-50%);
+//   -moz-transform:translate(-50%,-50%);
+//   -webkit-transform: translate(-50%,-50%);
+//   transform: translate(-50%,-50%);
+//
+//   @media (max-width: 485px) {
+//     width:100%;
+//   }
+}
+
+// .modal-window-container {
+//   padding: 10px;
+//   height: auto;
+// }
+
+// .modal-window-content {
+  // margin: 25px 15px 0 15px;
+// }
+
+// .private-close-icon {
+//   @extend .fa;
+//   @extend %fa-times;
+// }
+
+// .private-close-modal {
+//   float: right;
+//   cursor: pointer;
+// }
+
+.private-items-modal-header {
+  // padding-top: 20px;
+  h2 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 23px;
+  }
+}
+
+.private-items-modal-content {
+  margin-bottom: 20px;
+}
